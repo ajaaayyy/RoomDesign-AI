@@ -2649,8 +2649,29 @@ def process_firestore_requests():
             })
 
 
-if __name__ == "__main__":
+from threading import Thread
+
+
+def firestore_worker():
     print("✅ Phase 3 v6 semantic-lighting recommender app started.")
+
     while True:
-        process_firestore_requests()
+        try:
+            process_firestore_requests()
+        except Exception as e:
+            print(f"Worker error: {e}")
+
         time.sleep(POLL_SECONDS)
+
+
+@app.route("/")
+def home():
+    return "RoomVisualizer AI Worker Running"
+
+
+if __name__ == "__main__":
+    worker_thread = Thread(target=firestore_worker)
+    worker_thread.daemon = True
+    worker_thread.start()
+
+    app.run(host="0.0.0.0", port=10000)
