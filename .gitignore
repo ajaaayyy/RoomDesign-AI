@@ -7,4 +7,4 @@ temp/
 uploads/
 
 firebase/*.json
-models/*.pkl
+models/
