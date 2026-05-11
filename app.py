@@ -1,11 +1,11 @@
-import os
 import time
 import math
 import random
 import traceback
 import cv2
+from flask import app
 import requests
-import torch
+#import torch
 import gdown
 import cv2
 from collections import deque
@@ -145,15 +145,15 @@ def get_models():
 # =========================================================
 # MIDAS DEPTH ESTIMATION
 # =========================================================
-MIDAS_DEVICE = torch.device(
-    "cuda" if torch.cuda.is_available() else "cpu"
-)
+MIDAS_DEVICE = "cpu"
+
 
 midas = None
 midas_transform = None
 
 
 def load_midas():
+    import torch
     global midas
     global midas_transform
 
@@ -167,7 +167,9 @@ def load_midas():
         "MiDaS_small"
     )
 
-    midas_model.to(MIDAS_DEVICE)
+    device = torch.device("cpu")
+    midas_model.to(device)
+
     midas_model.eval()
 
     transforms = torch.hub.load(
@@ -182,16 +184,37 @@ def load_midas():
 
     print("MiDaS ready")
 
-if os.path.exists(EXPANDED_DATA_PATH):
-    df_master = pd.read_csv(
-        EXPANDED_DATA_PATH,
-        low_memory=True,
-        engine="python"
-    )
-    print("✅ Loaded expanded Phase 2 v5 dataset")
-else:
-    df_master = pd.read_csv(DATA_PATH, low_memory=False)
-    print("⚠️ Expanded v5 dataset not found, loaded Phase 1 recommender + KB dataset")
+df_master = None
+kb_df = None
+
+def load_datasets():
+    global df_master, kb_df
+
+    if df_master is not None:
+        return
+
+    print("📦 Loading datasets...")
+
+    if os.path.exists(EXPANDED_DATA_PATH):
+        df_master = pd.read_csv(
+            EXPANDED_DATA_PATH,
+            low_memory=True,
+            engine="python"
+        )
+        print("✅ Loaded expanded dataset")
+    else:
+        df_master = pd.read_csv(DATA_PATH, low_memory=False)
+        print("✅ Loaded fallback dataset")
+
+    if os.path.exists(KB_METADATA_PATH):
+        kb_df = pd.read_csv(
+            KB_METADATA_PATH,
+            low_memory=False
+        )
+    else:
+        kb_df = df_master.copy()
+
+    print("✅ Datasets ready")
 
 
 def normalize_room_label_app(value):
@@ -2603,6 +2626,8 @@ def predict_full_room_preview(
 # REQUEST LOOP
 # =========================================================
 def process_firestore_requests():
+    load_datasets()
+    get_models()
     docs = request_collection.where("status", "==", "pending").get()
     if not docs:
         print("No pending requests.")
@@ -2690,7 +2715,8 @@ if __name__ == "__main__":
     worker_thread.daemon = True
     worker_thread.start()
 
-    app.run(
-    host="0.0.0.0",
-    port=int(os.environ.get("PORT", 10000))
-)
+    import os
+
+port = int(os.environ.get("PORT", 10000))
+print("🚀 Flask starting...")
+app.run(host="0.0.0.0", port=port)
