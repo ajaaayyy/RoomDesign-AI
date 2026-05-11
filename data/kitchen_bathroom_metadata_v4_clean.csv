@@ -1,0 +1,494 @@
+﻿model_id,category,category_clean,name,room_type,usable_room_types,style,anchor_type,placement_zone,layout_scale
+1a3a4611409e306c1a832e2972cd1e0d,"faucet,spigot",faucet,Kohler Forte' Pedestal Lav Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1a5586fc147de3214b35a7d7cea7130,"water faucet,water tap,tap,hydrant",water faucet,SlimD2 - Armando Vicario Kitchen Room Mixer - Kitchen Room Tapware - Abey,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1ae1609816687a883792c04fd8184496,"faucet,spigot",faucet,Solna Chrome Single Handle Pull-Down Kitchen Room Faucet | 63020LF-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+1bc3c767ecc9323c3321831d2245cf06,"faucet,spigot",faucet,K-168 Antiqueâ„¢ single-control Kitchen Room sink faucet with lever handle,Kitchen Room,Bathroom|Kitchen Room,Vintage/Retro,fixture,sink_zone,0.5
+1bec5441a4a0fc3d6af014d294c0e7c5,"water faucet,water tap,tap,hydrant",water faucet,Bathroom tap,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1c0b65c18b56fc71a6c6cdd30dc62f82,"faucet,spigot",faucet,Santec Bravo Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1c5b1091af3106fa2c3adce840300a4c,"water faucet,water tap,tap,hydrant",water faucet,Mixer taps,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1c684a5a113c4536b7a867e9b35a1295,"faucet,spigot",faucet,JUSTIME 6765-90-80CP FAUCET æ°´é¾é ­,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1cc79cefa63fa41d2d3adeba9d9c3aae,"water faucet,water tap,tap,hydrant",water faucet,Sink tap Blanco Linus S,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1d584bae2bb2ff963ca0c4be71e7b721,"faucet,spigot",faucet,Commercial Sink Faucet,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+1d5be60c3915be4b362845c6edb57fc,"faucet,spigot",faucet,Verona External Bath-Shower Mixer with Floor Pillar Leg and Shower Rose,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1db4071178f5818250da8b99982a3057,"faucet,spigot",faucet,JUSTIME Basin Faucet (Antimicrobial Copper Handle)_7780-91-80CU,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1de8f72e190d7ef1979c556124bee033,"faucet,spigot",faucet,Vuelo Chrome Single Handle Hi-Arch Pull Out Kitchen Room Faucet with SmartTouch Technology | 64255LF-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+1e038dfd194d74863321831d2245cf06,"faucet,spigot",faucet,K-6215-4 TorqÂ® deck-mount bridge Kitchen Room faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1e2e11043b3d67d76621db2c3226f08,"faucet,spigot",faucet,HansGrohe Talis S med utdragbar handdush,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1e5712458907fe06b362845c6edb57fc,"faucet,spigot",faucet,Loft Elite Monoblock Basin Mixer with Central Swivel,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1eb80664e450516e2c6c98851414a9d8,"faucet,spigot",faucet,Commercial Kitchen Room Faucet and Sprayer,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+1f00e3c311882a8866279f6cdc4d0486,"mixing faucet,water faucet,water tap,tap,hydrant,faucet,spigot",mixing faucet,Sloan Valve Optima Plus EBF-550 Battery Powered Hand Washing Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1f223cac61e3679ef235ab3c41aeb5b6,"faucet,spigot",faucet,MISTURADOR LAVATÃ“RIO DE MESA - BRIZO - DOCOL,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1f43546db1dc2912f38c4a12750d961b,"faucet,spigot",faucet,Siderna Chrome 4 Hole Roman Tub with Hand Shower by Brizo | T67480-PCLHP-HL680-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+1f713f9a9ba4eca2b362845c6edb57fc,"faucet,spigot",faucet,Vectra Wall-mounted Shower Mixer,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1f833904413559adc837473125b7231e,"water faucet,water tap,tap,hydrant",water faucet,Foster_Elettra 8476 000,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1fa06b97a0498b3ebb201909fefe7321,"water faucet,water tap,tap,hydrant,faucet,spigot",water faucet,Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1fa1f1515365ecb0b362845c6edb57fc,"faucet,spigot",faucet,Logica Wall-mounted Shower Mixer,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+1fbbe439f321bc2fb362845c6edb57fc,"faucet,spigot",faucet,Targa  High Neck Monoblock Basin Mixer with Pop-up Waste,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+2a7ffc2172f9a2ddb362845c6edb57fc,"faucet,spigot",faucet,Thesis Monoblock Mixer for Bidet with Pop-up Waste,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+2ae78fcdf7e0bbe0c36fb70296e45483,"faucet,spigot",faucet,RSVP Chrome Deck-Mount Vessel Lavatory by Brizo | 65790LF-PCLHP,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+2b06f6839c637fb54d7082b34825ef0,"water faucet,water tap,tap,hydrant,faucet,spigot",water faucet,K-8961-7 Toobiâ„¢ single-handle bidet faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+2b4f980f62ac992a3b717863742b7581,"water faucet,water tap,tap,hydrant",water faucet,Tapping Tee - Curved Base - Electrofusion PE,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+2c80e8261b08d3e76c18e71fd49c4dc,"faucet,spigot",faucet,Charlotte Two Handle Wall-Mount Lavatory Faucet  by Brizo | 65885LF-PCLHP,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+2d47bde73180097d76d20e73c57c9a03,"faucet,spigot",faucet,Baliza Single Handle Single Hole Lavatory Faucet by Brizo | 65005LF-PC,Kitchen Room,Bathroom|Kitchen Room,Southeast Asia,fixture,sink_zone,0.5
+2e31697d451f89843321831d2245cf06,"faucet,spigot",faucet,K-13963 Elateâ„¢ pullout Kitchen Room faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+2f44351ce849a8056f893b5bc716a3fa,"faucet,spigot",faucet,Bathroom Vanity Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+2f46e4d513207150b362845c6edb57fc,"faucet,spigot",faucet,Betap Wall Mounted Bath/Shower Mixer,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3a30f6f46c4f1774e4e346ee2650d150,"faucet,spigot",faucet,"True Union Diaphragm Valve type 14 - DIN, Spigot type",Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3a32f3b62d76fbd8b362845c6edb57fc,"faucet,spigot",faucet,Touch Monoblock Bidet Mixer with Pop-up Waste,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3a86bbcb33d39bc72636ff7d41908032,"faucet,spigot",faucet,Ideal Standard Celia Kitchen Room Faucet KÃ¼chenarmatur,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3ab88b710b8ad3ee3321831d2245cf06,"faucet,spigot",faucet,K-7507 PuristÂ® Primary Swing Spout Kitchen Room Faucet without Spray,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3af3bb6e47732764c36fb70296e45483,"faucet,spigot",faucet,Vesi Channel Chrome TempAssure Thermostatic Valve Trim by Brizo | T60040-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+3b0a1265844b0a54e7ec4274d0a48ec,"water faucet,water tap,tap,hydrant",water faucet,Taps by Opank tea,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3bd7088a61b81842c129b46efdbc7885,"faucet,spigot",faucet,bathroom faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3be00bc0418fa112b362845c6edb57fc,"faucet,spigot",faucet,Loft Elite Monoblock Bidet Mixer with Pop-up Waste,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3beb681d384c32a076d20e73c57c9a03,"faucet,spigot",faucet,Virage Diverter Trim by Brizo - T60630-PC,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3c38d1543ca1b63a9bdc22a1e02e82,"faucet,spigot",faucet,KWC EVE,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3c8af998b8d3336c7793996e6e93af11,"faucet,spigot",faucet,Waterstone 5500 Pulldown Kitchen Room Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3ca7d12fe0b4fc5d3321831d2245cf06,"faucet,spigot",faucet,K-7514 Hybrid sculpted Touchless deck-mount faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3cace6ee49f5bfb0b362845c6edb57fc,"faucet,spigot",faucet,Loft-T Wall-mounted Shower Mixer,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3d9c646e912c7723af0b75abe6dfe88a,"water faucet,water tap,tap,hydrant",water faucet,Tap,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3dccc5e096aa99e4fe2ecb70903654e9,"faucet,spigot",faucet,Sloan Optima ESD-200-250 Sensor Activated Electronic Soap Dispenser,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3e208d2bcf317a2b362845c6edb57fc,"faucet,spigot",faucet,Touch Monoblock Basin Mixer with Pop-up Waste,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3f6ac7c3927f9e61f38c4a12750d961b,"faucet,spigot",faucet,Charlotte Electronic Lavatory Faucet With Proximity by Brizo | 65685LF-PC,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+3f99e84747ae5e0216f1e46eb2815c0b,"faucet,spigot",faucet,Grohe Essence,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4a03d0bf342959e7c36fb70296e45483,"faucet,spigot",faucet,RSVP Chrome TempAssure Thermostatic Valve Trim by Brizo | T60090-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+4a44ef4b181f1101b362845c6edb57fc,"faucet,spigot",faucet,Vectra Wall-mounted Sink Mixer with Superior Swivel Spout,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4a77b3d8bca397c5f6c00faf69d13ed1,"faucet,spigot",faucet,Toto Aquia Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4a9a49b9d5b267d4b7a867e9b35a1295,"faucet,spigot",faucet,JUSTIME Tip-Touch Lavatory Faucet_6790-N0-80CPæ°´é¾é ­,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4af74fd7eaac11a2b7a867e9b35a1295,"faucet,spigot",faucet,JUSTIME Lucky Seven Series Kitchen Room Faucet  æ°´é¾é ­,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4baadfa07397fff83321831d2245cf06,"faucet,spigot",faucet,"K-11075-4 ArcherÂ® lavatory faucet with 4"" centers",Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4bc18e1398c1b56173ec0850b5880d3f,"water faucet,water tap,tap,hydrant",water faucet,VPH-4 + SP-4,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4bcbe4f02228788d50da8b99982a3057,"faucet,spigot",faucet,JUSTIME Basin Faucet (Extra-Length Type) 7757-90-80CP,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4be2cb4c94a4ae9f3321831d2245cf06,"faucet,spigot",faucet,K-7337-4 HiRise two-hole deck-mount bridge Kitchen Room sink faucet with 10-1,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4befbb7f5548a835fe1bdd3c0c9e9c3c,"faucet,spigot",faucet,Colonne de douche multifonction,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4c1ebf8c47731b573321831d2245cf06,"faucet,spigot",faucet,K-13136 PinstripeÂ® showerarm and flange,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4c3fe77fab3730caec944ac16e6ab528,"water faucet,water tap,tap,hydrant,faucet,spigot",water faucet,Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4ce9747bda12fba68616812464c86290,"water faucet,water tap,tap,hydrant",water faucet,Kitchen Room tap / Keukenkraan,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4d8b953c08a287c26eb5b970490a0d07,"faucet,spigot",faucet,Dornbracht eno 33870760,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4de724831f09791676c18e71fd49c4dc,"faucet,spigot",faucet,Solna Chrome Single Handle Pull-Down Kitchen Room Faucet by Brizo | 64020LF-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+4de8400e15f1ce79b362845c6edb57fc,"faucet,spigot",faucet,Esmai Mezclador Exterior Fregadero Cano Giratorio,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4eca4ca3fc1a63ba50da8b99982a3057,"faucet,spigot",faucet,JUSTIME  Basin Faucet_6766-90-80CP,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4ed3d9c8a8ff37ebb7a867e9b35a1295,"faucet,spigot",faucet,JUTIME_Kitchen Room faucet_6771-96-80CP,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4efc45b85110c23276c18e71fd49c4dc,"faucet,spigot",faucet,"Charlotte Two Handle Widespread Lavatory Faucet by Brizo | 65385LF-PCLHP, HL5385-PNCO",Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4f3871c661ac8ae6c36fb70296e45483,"faucet,spigot",faucet,RSVP Chrome Two Handle Widespread Lavatory with Cross Handles by Brizo | 65390LF-PCLHP,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+4f9b778e5bc6e251a8f6851a5d3f13b6,"faucet,spigot",faucet,Riobel - Caesar Faucet CR01XX,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+4fbb6add41adf7eb843f813f752a5e35,"faucet,spigot",faucet,keukenkraan NEFF nieuw mod. 5,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5a0e759e281cfac71250bcd0500910e5,"faucet,spigot",faucet,Hose Bibb (Generic),Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5ae7c06613656ce8db0923ddab67dd72,"water faucet,water tap,tap,hydrant",water faucet,Blanco Vonda,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5ae9420bed69471576c18e71fd49c4dc,"faucet,spigot",faucet,Charlotte High Flow Volume Control Trim  by Brizo | T66685-PNCO,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5aeed0c9db054c395f12a496ed94ff1d,"faucet,spigot",faucet,Axor Citterio M 34127000 Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5b0049fff25483854e0738735f157c3,"water faucet,water tap,tap,hydrant,faucet,spigot",water faucet,Moncomando de LavatÃ³rio Alto Focus da HRR,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5b7e61559ed415c6f893b5bc716a3fa,"faucet,spigot",faucet,Roman tub faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5ba4d7ff5de1e727c36fb70296e45483,"faucet,spigot",faucet,RSVP Chrome Two Handle Widespread Lavatory with Blue Glass Finial by Brizo | 65390LF-PCLHP-RP48903PC,Kitchen Room,Bathroom|Kitchen Room,Mediterranean,fixture,sink_zone,0.5
+5ba6bb8365b474f773ecd661ad15c4dd,"water faucet,water tap,tap,hydrant",water faucet,Tap,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5c93abb4d8158919c36fb70296e45483,"faucet,spigot",faucet,Tresa Chrome Single Handle Single Hole Vessel Lavatory Faucet by Brizo | 65436LF-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+5cc1d274e57dcef73321831d2245cf06,"faucet,spigot",faucet,K-T14428-4 PuristÂ® bath or deck-mount high-flow bath faucet trim with lever handles,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5d7475a12087aba3176bf371ba7a6ff,"water faucet,water tap,tap,hydrant,faucet,spigot",water faucet,Faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5ded149f15be08af526fd4dfffaede08,"water faucet,water tap,tap,hydrant",water faucet,Pyramis Rialto Kitchen Room and bathroom tap,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5f46e75b9faf77c876c18e71fd49c4dc,"faucet,spigot",faucet,SIDERNA TWO HANDLE WIDESPREAD LAVATORY FAUCET by Brizo | 65380LF-BN,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5f76becd78c7eb2bb362845c6edb57fc,"faucet,spigot",faucet,Monodin Shelf Sink Mixer with High Spout,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+5f9c1f87d28294153321831d2245cf06,"faucet,spigot",faucet,K-T314-4M FinialÂ® Traditional deck-mount high-flow bath faucet trim with lever handles,Kitchen Room,Bathroom|Kitchen Room,Vintage/Retro,fixture,sink_zone,0.5
+6a3bdf75976bcd914b35a7d7cea7130,"water faucet,water tap,tap,hydrant",water faucet,SK3 - Lucia Square Sidelever Mixer - Kitchen Room Tapware - Abey,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6a8665f6cac2eaf73321831d2245cf06,"faucet,spigot",faucet,K-110-3 Antiqueâ„¢ bath faucet with handshower and six-prong handles,Kitchen Room,Bathroom|Kitchen Room,Vintage/Retro,fixture,sink_zone,0.5
+6b23fe58eecdc1946048f75ed36a5ac0,"water faucet,water tap,tap,hydrant",water faucet,Mixer Tap,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6b48e8d129f22956b362845c6edb57fc,"faucet,spigot",faucet,Targa Monoblock Sink Mixer with High Swivel Spout,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6b513f89b3b0a06b2b3e9b6eb52d35df,"faucet,spigot",faucet,Kohler Clairette faucet,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6c692c34625914a64cc3b7bdfa613934,"water faucet,water tap,tap,hydrant",water faucet,tap 2,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6ca769c3a4429e4150da8b99982a3057,"faucet,spigot",faucet,JUSTIME Basin Faucet (Extra-Length Type) 7757-91-80CP,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6e1051dae8109411b362845c6edb57fc,"faucet,spigot",faucet,Moai-T Wall-mounted Shower Mixer,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6f2fcfb9f844979f87dd60af81c93a3c,"water faucet,water tap,tap,hydrant",water faucet,Miscelatore,Kitchen Room,Bathroom|Kitchen Room,Modern,fixture,sink_zone,0.5
+6f3d84d580aa77f0c36fb70296e45483,"faucet,spigot",faucet,Siderna Chrome 4 Hole Roman Tub-Hand Shower-Black Glass Accent Handles | T67480-PCLHP-HL682-PC,Kitchen Room,Bathroom|Kitchen Room,Industrial,fixture,sink_zone,0.5
+1a74ca07a11f507554d7082b34825ef0,"bathtub,bathing tub,bath,tub",bathtub,"K-1821 UnderscoreÂ® 66"" x 32"" drop-in bath",Bathroom,Bathroom,Modern,fixture,wall,1.2
+1acfdd86f8d48bb19750530d0552b23,"bathtub,bathing tub,bath,tub",bathtub,Aveo Bath Special shape,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1b021f1332e7d185ccd0340812259a39,"bathtub,bathing tub,bath,tub",bathtub,IP 6829 Fiji L 160x90,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1b6bbfbba694e33476c18e71fd49c4dc,"bathtub,bathing tub,bath,tub",bathtub,Soap Dish Brushed Nickel by Brizo | 695560-BN,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1c6117c2eef53221b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Genova 1700x750 Water Massage,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1c68386f4be530973321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-1173-GCR UnderscoreÂ® 5.5' BubbleMassageâ„¢ bath with chromatherapy,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1c908b81867d6d85b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Haiti 1700x800 wo/Massage w/Handgrips,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1cc2487bfbc0209e3321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-1127-L 6042 Bath with flange and left-hand drain,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1ccb1ab19056b80891a2440e0fc33776,"bathtub,bathing tub,bath,tub",bathtub,bath,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1dc36bb29702c28b3321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-1418-H2 MemoirsÂ® 6' whirlpool,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1dc8e88da760f186ccd0340812259a39,"bathtub,bathing tub,bath,tub",bathtub,IP 6885 Society 190x80,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1e454ec01708c3b24c62bee40dcdc539,"bathtub,bathing tub,bath,tub",bathtub,DB30-3,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1ea8a2646a0e33afcd2957531fcac5d6,"bathtub,bathing tub,bath,tub",bathtub,Whirlpool tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1f026dc37ca7c7b26b448b8aaebb705c,"bathtub,bathing tub,bath,tub",bathtub,Dado Carmen Stone Basin,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1f0ae93f9aafbe27322d134e1c4a80fc,"bathtub,bathing tub,bath,tub",bathtub,Public Pool,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1f3abd1016b4b39e4c62bee40dcdc539,"bathtub,bathing tub,bath,tub",bathtub,DB36-4,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1f5642ecc73ef347323f2769d46520fa,"bathtub,bathing tub,bath,tub",bathtub,K-1229 MariposaÂ® 5.5' bath with reversible drain,Bathroom,Bathroom,Modern,fixture,wall,1.2
+1fb49b048e21c27344221bef0fa3c36b,"bathtub,bathing tub,bath,tub",bathtub,"Glenwood Wall Cabinet 24W2727B - 24"" Deep, Butt Doors",Bathroom,Bathroom,Modern,fixture,wall,1.2
+2a28b3c0318590983c8d0fdfb1cc2535,"bathtub,bathing tub,bath,tub",bathtub,baignoire,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2a57aa530ef82b91904e03fa15bd73ec,"bathtub,bathing tub,bath,tub",bathtub,Cuba de apoio retangular Gran Pacific - Incepa,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2a5d4962869b1c34c62bee40dcdc539,"bathtub,bathing tub,bath,tub",bathtub,B12,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2a83a721763cb79df15dc88ff54e5f9f,"bathtub,bathing tub,bath,tub",bathtub,hot tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2aadee812a70aa79fb3819b3d3d9c448,"bathtub,bathing tub,bath,tub",bathtub,Gazebo with hot tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2ad3ff96fe7f5d46a9420f0961aa2e8f,"bathtub,bathing tub,bath,tub",bathtub,Contemporary Bathroom Design,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2ae90c52820a705a16af3198c99de08,"bathtub,bathing tub,bath,tub",bathtub,Bath,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2b1d6ad1dbdc945bc3f6ab99a06dd7a,"bathtub,bathing tub,bath,tub",bathtub,large pool,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2b535c15e1baec23ee2de8169f41c6e9,"bathtub,bathing tub,bath,tub",bathtub,Stone Hot Tub_model 1.0,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2b655690268f451a11fa1d2a0b030f17,"bathtub,bathing tub,bath,tub",bathtub,bath. Thermolux Talia 150,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2b6bea31677afd413321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-809-G0 KathrynÂ® 5.5' BubbleMassageâ„¢ baths with White airjets,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2b9228db2c77130d44221bef0fa3c36b,"bathtub,bathing tub,bath,tub",bathtub,"Glenwood Wall Cabinet 24W2721B - 24"" Deep, Butt Doors",Bathroom,Bathroom,Modern,fixture,wall,1.2
+2bbad1610128749e1c17aef130ed6213,"bathtub,bathing tub,bath,tub",bathtub,IP2013.40 180x80x48,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2c217197bee9dfbcb362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Malibu 1600x750 w/Handgrips,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2c62b19b80a63f443321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-1159-L 7236 Bath with flange and left-hand drain,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2cc413a8680b6269b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Newcast 1700x850 ext. grey w/Woodline Platform,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2d765fd16aedb02b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Dama Senso 1700x700/800 wo/Massage,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2e61279ce7db97ab3321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-1113-RA Windwardâ„¢ 5' bath with integral apron and right-hand drain,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2e752b6c5b6c1cf865793e85eb09b261,"bathtub,bathing tub,bath,tub",bathtub,hot tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2ebcb0c668523047b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Faro 1700x750,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2edc92c82cc5db3d3321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,"K-1946 ArcherÂ® ExoCrylicâ„¢ 60"" x 30"" drop-in Bath",Bathroom,Bathroom,Modern,fixture,wall,1.2
+2f3d0058b843186180a744f96587254b,"bathtub,bathing tub,bath,tub",bathtub,Hot Tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2f5a70ee78ed7cfaca581939cd410ca,"bathtub,bathing tub,bath,tub",bathtub,Hot Tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2f65f22224a48d26ead253ec715c9744,"bathtub,bathing tub,bath,tub",bathtub,Hot tub/ pool,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2f6da348147cad9c3321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-1142 6036 Bath,Bathroom,Bathroom,Modern,fixture,wall,1.2
+2f90ff6319c74691c7cd249d921dad67,"bathtub,bathing tub,bath,tub",bathtub,Trajet Inverness 6666 Tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3a5a6113f20f7462c0f3ab010f0dece7,"bathtub,bathing tub,bath,tub",bathtub,Luxury Hot Tub,Bathroom,Bathroom,Light Luxury,fixture,wall,1.2
+3b222c644a783ebbfcd4910413c446d9,"bathtub,bathing tub,bath,tub",bathtub,bathroom sink and faucet,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3b4a28f7e078ac063321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,"K-713 Villagerâ„¢ bath with extra 4"" ledge and left-hand drain",Bathroom,Bathroom,Modern,fixture,wall,1.2
+3b501fa442876e4860fe69425c98b781,"bathtub,bathing tub,bath,tub",bathtub,"MTI Whirlpools, Alissa 2 bath, 5' x 2'-8""",Bathroom,Bathroom,Modern,fixture,wall,1.2
+3b59f9cff3d39a0b602ced3945939e8e,"bathtub,bathing tub,bath,tub",bathtub,Banheira,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3bbf438a17d77cbe3321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,"K-1195 SynchronyÂ® 6' bath, less softgrip grip handles",Bathroom,Bathroom,Modern,fixture,wall,1.2
+3bbffbe6bf88c8cb362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Genova 1500x700 Water Massage,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3c16de8249619580fe52ffd0e748a1ab,"bathtub,bathing tub,bath,tub",bathtub,"76261110 Lawsonâ„¢ 60"" x 32"" Whirlpool Bath",Bathroom,Bathroom,Modern,fixture,wall,1.2
+3cb7df6d3fd900acb0026ac53ebb5587,"bathtub,bathing tub,bath,tub",bathtub,"Freestanding bath 'Esperia' solid surface tub 72"" x 33""",Bathroom,Bathroom,Modern,fixture,wall,1.2
+3d6afd4a791e5bdeb022c94235bc8601,"bathtub,bathing tub,bath,tub",bathtub,Bathroom Sink,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3db87ff05c046a58d787d15d1d196768,"bathtub,bathing tub,bath,tub",bathtub,Dado Oval basin,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3db95e318c29a2ccb362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Faro with perimetral acrylic panel 1700x750,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3e2b33cffce8fc632dda19453ee07c6b,"bathtub,bathing tub,bath,tub",bathtub,BATH,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3e9b4b309c9db612b0957d845ac33749,"bathtub,bathing tub,bath,tub",bathtub,Sealskin bad GetWet Optima duo,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3efe1e2fc2ab4c0e4e58e1f374dbffd,"bathtub,bathing tub,bath,tub",bathtub,K-1224 MariposaÂ® 5.5' whirlpool with reversible drain,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3f61daaf0f87563b4ed5b40788f6ba60,"bathtub,bathing tub,bath,tub",bathtub,Hot tub Lernacken,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3fad29fafe787406b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Continental 1200x700 wo/Anti-Slip Base,Bathroom,Bathroom,Modern,fixture,wall,1.2
+3ffffa5a05b2254d4ee769ccec97aa83,"bathtub,bathing tub,bath,tub",bathtub,Hot Tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4a41317b5baa2d52c658b057b1ffe06f,"bathtub,bathing tub,bath,tub",bathtub,BidÃª Hampton - Incepa,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4a6ed9c61b029d15904e03fa15bd73ec,"bathtub,bathing tub,bath,tub",bathtub,Cuba de apoio quadrada Pacific - Incepa,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4a7d4186a966d777e49bb55b21b2d30a,"bathtub,bathing tub,bath,tub",bathtub,Simple bathtub,Bathroom,Bathroom,Minimalist,fixture,wall,1.2
+4a7e3ca704e59439b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Banaseo 1000x700,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4aef9fc6633010a927b4493ee0c4db3f,"bathtub,bathing tub,bath,tub",bathtub,"K-1219-LA Hourglassâ„¢ 32 bath with integral apron, tile flange and left-hand drain",Bathroom,Bathroom,Modern,fixture,wall,1.2
+4bba4847c53eefa43121505b9493314,"bathtub,bathing tub,bath,tub",bathtub,"Glenwood Wall Cabinet W2712B - 12"" Deep, Butt Doors",Bathroom,Bathroom,Modern,fixture,wall,1.2
+4cb7d2c28ef5d4d854d7082b34825ef0,"bathtub,bathing tub,bath,tub",bathtub,"K-1167-RVB UnderscoreÂ® VibrAcousticÂ® 60"" X 30"" alcove bath, right drain",Bathroom,Bathroom,Modern,fixture,wall,1.2
+4d3a9133a7297ff54f0ef2e216a06871,"bathtub,bathing tub,bath,tub",bathtub,Vieques agape,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4d442c72b0083566ede9471c962dd6ba,"bathtub,bathing tub,bath,tub",bathtub,bath-02,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4d7ce41fe16725c5e346f79b9a86790,"bathtub,bathing tub,bath,tub",bathtub,"K-1209-LA Hourglassâ„¢ 32 whirlpool with integral apron, flange and left-hand drain",Bathroom,Bathroom,Modern,fixture,wall,1.2
+4decc1afdd1eb8494c62bee40dcdc539,"bathtub,bathing tub,bath,tub",bathtub,SHAKER 3,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4e399a21e6900cb9cbbed63b99f90f4a,"bathtub,bathing tub,bath,tub",bathtub,BainUltra Naos Freestanding Tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4e77f04af9f378fd6bae7522bd91c859,"bathtub,bathing tub,bath,tub",bathtub,leah Bath,Bathroom,Bathroom,Modern,fixture,wall,1.2
+4f14ed9498cd69c6392f36bc2fbdcf8c,"bathtub,bathing tub,bath,tub",bathtub,"Glenwood Wall Cabinet W2418B - 12"" Deep, Butt Doors",Bathroom,Bathroom,Modern,fixture,wall,1.2
+5a4cf079a43f0a793321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-1161-LA Tercetâ„¢ bath with integral apron,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5a67b4165fca8f4a34558e566e818bea,"bathtub,bathing tub,bath,tub",bathtub,Ideal Standard Concept tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5a79d517ab366c52ccd0340812259a39,"bathtub,bathing tub,bath,tub",bathtub,IP 6828 Cuba 180x80,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5ab70805cc7ca4be73fd10002dacf954,"bathtub,bathing tub,bath,tub",bathtub,Time Machine,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5af2dea565f2cd7138da322e72ae3fae,"bathtub,bathing tub,bath,tub",bathtub,bathtub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5b088060eeffc5723af30a3946d92feb,"bathtub,bathing tub,bath,tub",bathtub,Victoria and Albert Antibes Built In Bath,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5b7d8d0f5c9ac09a5a4742c0584c3335,"bathtub,bathing tub,bath,tub",bathtub,Outdoor spa,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5b8badaa652f4363210c439c61dd9b9e,"bathtub,bathing tub,bath,tub",bathtub,Pool & Grill Station,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5b8d1278d408864eba47eca8aa80094,"bathtub,bathing tub,bath,tub",bathtub,Cuba de apoio quadrada - Deca - L108,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5bcca919768845bdd0043cfa915003ff,"bathtub,bathing tub,bath,tub",bathtub,jaccusi,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5c06133aac3e8fab3321831d2245cf06,"bathtub,bathing tub,bath,tub",bathtub,K-895 Parityâ„¢ cast iron undermount bath,Bathroom,Bathroom,Industrial,fixture,wall,1.2
+5c77eba7135d8703b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Malibu 1700x700  w/Handgrips,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5d403d56f762fab7b362845c6edb57fc,"bathtub,bathing tub,bath,tub",bathtub,Genova 1400x700 Water Massage,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5db3375f0e4cf84e133dce51d963916a,"bathtub,bathing tub,bath,tub",bathtub,OFURÃ” ROMANCE DECK SCS,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5e07cb24ec93904bcc6434361376a7a4,"bathtub,bathing tub,bath,tub",bathtub,"Glenwood Wall Cabinet W3324B - 12"" Deep, Butt Doors",Bathroom,Bathroom,Modern,fixture,wall,1.2
+5e83e7b924759c8ac2b1819e686b1fc9,"bathtub,bathing tub,bath,tub",bathtub,OfurÃ´ Base 15,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5e9c7ef153807504a58a5ecb2008fd42,"bathtub,bathing tub,bath,tub",bathtub,Baignoire en fonte,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5eab643d440c4a4bab78f79703f1828f,"bathtub,bathing tub,bath,tub",bathtub,Hot tub,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5f1145774cb48e7854d7082b34825ef0,"bathtub,bathing tub,bath,tub",bathtub,"K-710-W Iron WorksÂ® Historicâ„¢ 66"" x 36"" freestanding bath",Bathroom,Bathroom,Industrial,fixture,wall,1.2
+5f2cd0c8c02d7557bff8b2d517ae4561,"bathtub,bathing tub,bath,tub",bathtub,Ligbad Villeroy&Boch Subway,Bathroom,Bathroom,Modern,fixture,wall,1.2
+5ffc44cc5b953a4b572c0ed39433d683,"bathtub,bathing tub,bath,tub",bathtub,Bath / Baignoire jacuzzi,Bathroom,Bathroom,Modern,fixture,wall,1.2
+6a6fed877d517549b12da0b74652c93d,"bathtub,bathing tub,bath,tub",bathtub,baÃ±era,Bathroom,Bathroom,Modern,fixture,wall,1.2
+6abb270bc9fc54fe4c62bee40dcdc539,"bathtub,bathing tub,bath,tub",bathtub,DB15-4,Bathroom,Bathroom,Modern,fixture,wall,1.2
+14bb2e591332db56b0be6ed024602be5,"washer,automatic washer,washing machine",washer,Bosch HomeProfessional washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+17dd78a433c3840b51229e7d6fc0cda8,"washer,automatic washer,washing machine",washer,Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+1a23fdbb1b6d4c53902c0a1a69e25bd9,"washer,automatic washer,washing machine",washer,Bosch Ã‡amaÅŸÄ±r Makinesi/Bosch Washing Machine by Askin Altinel,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+1a53e51455e0812e44a7fc53aa1d411c,"washer,automatic washer,washing machine",washer,Some Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+1ab22863c5f183eab00a4eba25ea081,"washer,automatic washer,washing machine",washer,GE Profile Washer and Dryer Set (Champagne),Kitchen Room,Kitchen Room|Bathroom,Light Luxury,appliance,wall,1.0
+1b77c0248add1d5540b559ef47048b86,"washer,automatic washer,washing machine",washer,F&P Washing Machine 5.5kg,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+1ba5e13255aa9d4840b559ef47048b86,"washer,automatic washer,washing machine",washer,F&P Washing Machine 6.5kg,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+1ffd145c196f19fba7ad9409a09b1a9,"washer,automatic washer,washing machine",washer,Lavadora,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+2010a39c4b0c58b714b35a7d7cea7130,"washer,automatic washer,washing machine",washer,"AquaSmart - 8kg - LCD - WL80T65CW1, WL42T26CW2 - Fisher & Paykel",Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+22041d5c50a6a0fb91219aad82abc053,"washer,automatic washer,washing machine",washer,Dyson Contrarotator CR01 Memory Washing Machine 2000,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+226f73828ad8562f4c86b1fdc94892eb,"washer,automatic washer,washing machine",washer,WFC7500VW WhirlpoolÂ® ENERGY STARÂ® Qualified Compact 2.3 cu. ft.,Kitchen Room,Kitchen Room|Bathroom,Minimalist,appliance,wall,1.0
+22c6787bb43651f0f6eb1856550bd229,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+24d50c4d744c20494a084dbeb79b6bb2,"washer,automatic washer,washing machine",washer,A washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+25b6e21ae9aa70824657977e55055ba0,"washer,automatic washer,washing machine",washer,washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+265d042dcfed6f15c357c21161963e89,"washer,automatic washer,washing machine",washer,Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+270df61e08a104c4c2180858eb6a5f28,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+29561b3ac0b7596cb23717c90dbac0d,"washer,automatic washer,washing machine",washer,V-Zug Waschmaschine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+2ba54a5656c25096174c6fb6a5678c41,"washer,automatic washer,washing machine",washer,modern washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+2d65189ff15fe1538a8c921f75bfa58c,"washer,automatic washer,washing machine",washer,Lavadora PequeÃ±a,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+2d856dae6ae9373add5cf959690bb73f,"washer,automatic washer,washing machine",washer,Vintage Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Vintage/Retro,appliance,wall,1.0
+2e9e2ff2b757fcbc23a5a908e4c7c27c,"washer,automatic washer,washing machine",washer,Commercial dish washer,Kitchen Room,Kitchen Room|Bathroom,Industrial,appliance,wall,1.0
+2ecde1b0c35fe63b4e4ed13543f85ef0,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+30925e14af2a92814b35a7d7cea7130,"washer,automatic washer,washing machine",washer,"8kg WH Front Loader - WH80F60W2, WH80F60W1 - Fisher & Paykel",Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+33d3f4a7b2df861248bfbf0a3bc453a5,"washer,automatic washer,washing machine",washer,LTC07 - Lavadora Turbo Compacta 7 kg (Electrolux),Kitchen Room,Kitchen Room|Bathroom,Minimalist,appliance,wall,1.0
+360e2cb74c9c4d38df3a1b0d597ce76e,"washer,automatic washer,washing machine",washer,WPRE6150KWT GE Profileâ„¢ ENERGY STARÂ® 4.1 IEC Cu. Ft. Colossal Capacity H,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+38ff66fecee0d18f4f782ac57aea97b,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+39e2a2eac45d9ee9961469926610c5fc,"washer,automatic washer,washing machine",washer,washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+3a289ed95f5902fb46cde67a6a1ea328,"washer,automatic washer,washing machine",washer,washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+3cafaabfd4924ee47e5b110192149385,"washer,automatic washer,washing machine",washer,Miele W 526 Novotronic Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+3ccba2b436b03aa635325a5f07346e1b,"washer,automatic washer,washing machine",washer,washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+3e4b1aaca677501b91219aad82abc053,"washer,automatic washer,washing machine",washer,Washer/Dryer Stacked 24-in,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+3f60bb32239ffa303bf7bae2651d2cf,"washer,automatic washer,washing machine",washer,Hotpoint WT960 Satin 2006,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+41f9be4d80af2c709c12d6260da9ac2b,"washer,automatic washer,washing machine",washer,Lava roupas LG-f14a7fds6,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+434fc8832f3ade492d5c22cc9b713d25,"washer,automatic washer,washing machine",washer,Stackable Washer Dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+43f60a28b62b616573d8be0e464c51f5,"washer,automatic washer,washing machine",washer,Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+452f7e16dcf5b2cf46cde67a6a1ea328,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+46251e61b0c06c0771ee000eee74cabc,"washer,automatic washer,washing machine",washer,Indesit WIXE167 Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+46749d40640967a94b77d9f59f49ab0,"washer,automatic washer,washing machine",washer,LSE11 - Lavadora e Secadora Eco Turbo (Electrolux),Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+4713da50446a7595df3a1b0d597ce76e,"washer,automatic washer,washing machine",washer,machine Ã  laver,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+49a0abbe22fb557bee526fc96b277c69,"washer,automatic washer,washing machine",washer,GFDS150EDWW GEÂ® 7.5 cu. ft. capacity frontload dryer with Steam and stainless steel drum,Kitchen Room,Kitchen Room|Bathroom,Industrial,appliance,wall,1.0
+4b5552c17c1fee56b6c98c3c1d4f4fcb,"washer,automatic washer,washing machine",washer,washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+4bca315fd61741797fb96900a295055a,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+4c90de8c1b850265bf258aa99523f66b,"washer,automatic washer,washing machine,dishwasher,dish washer,dishwashing machine",washer,built in dishwasher,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+50c639910aa3d75f29d8eecf3827c486,"washer,automatic washer,washing machine",washer,laundry machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+52c23e4a42c5f058ffc6e457221b9271,"washer,automatic washer,washing machine",washer,Washing Machine (scaled),Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+53e2b5c6f9a2103e3fb0920a55a7e805,"washer,automatic washer,washing machine",washer,Adora SLQ - Washing Machine - V-ZUG,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+58bc4edaefdf3b0e1db42cf774e49bf,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+592e665fa7e0a2bcc9614070d3269898,"washer,automatic washer,washing machine",washer,stacked washer-dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5947c6f05f5f74437b3ec0bc4f26f615,"washer,automatic washer,washing machine",washer,"27"" Dryer",Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5a94498353af7763e169a380d7bfbfc,"washer,automatic washer,washing machine",washer,Washer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5aa97c0e9c11bcd1677ce0c660f811e0,"washer,automatic washer,washing machine",washer,Golden_ST washing machine,Kitchen Room,Kitchen Room|Bathroom,Vintage/Retro,appliance,wall,1.0
+5bd6bf181544ca23c5d1eba75162ba,"washer,automatic washer,washing machine",washer,Nolan Appliances BOL Washing Machine 1300,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5e04ab0e24e0882272a5adfd0bef5d10,"washer,automatic washer,washing machine",washer,washer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5e071ea7184305122c5cdbc97c64ef41,"washer,automatic washer,washing machine",washer,Washer and Dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5e411987081d3f3af44ef865a534c948,"washer,automatic washer,washing machine",washer,Toyo Group Of Industries,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5f8991a5039ca4385c8adc541f88498,"washer,automatic washer,washing machine",washer,Candy Grand'O 1400 6kg Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+5fc3cef0cf926f5b9303a353ee6dfc42,"washer,automatic washer,washing machine",washer,Waschmaschie Bauknecht 600 x 600 x 825,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+60b8c29d75c28ce214b35a7d7cea7130,"washer,automatic washer,washing machine",washer,washing machine-(Ã‡amaÅŸÄ±r MakinasÄ±),Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+60f7d79d10e19134a3e7878f2bb5f0ca,"washer,automatic washer,washing machine",washer,Clothes Washer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+622d6f378276a09b8fac6a8030e15671,"washer,automatic washer,washing machine",washer,"AquaSmart - 8kg - LED - WL80T65DW1, WL42T26DW1 - Fisher & Paykel",Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+62e22f4d1846d8c1fdc6c1669e5c540,"washer,automatic washer,washing machine",washer,Combination washer/dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+63b49123983e4cf67a31dd5af93fdb5c,"washer,automatic washer,washing machine",washer,washer and dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+64e1c85034dfe93ab7dc65d7950bd55b,"washer,automatic washer,washing machine",washer,Lave-linge,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+677a00ae2e3f7a2145ca70e41d71c65d,"washer,automatic washer,washing machine",washer,washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+67e25e8640583e8d91219aad82abc053,"washer,automatic washer,washing machine",washer,GE Profile 7.5 Cu. Ft.Colossal Capacity Electric Dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+6b056e83f0ae99f3792911e05e8927e7,"washer,automatic washer,washing machine",washer,Washer Dryer Combo,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+6b5bd7b97b0fafb83bd5bed2701d5593,"washer,automatic washer,washing machine",washer,Hotpoint WMAL641 Washing Machine White 2011,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+6bb2e6f20f189167d48855885373053b,"washer,automatic washer,washing machine",washer,Washing Machine Siemens iQ800 Master Class,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+6bb98df3d7f7d3e1e5bd38daa40d76f8,"washer,automatic washer,washing machine",washer,Front Load Washer and Dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+6e606fb36a1fa72370011ebcb36fd95d,"washer,automatic washer,washing machine",washer,Lavadora Brastemp Duet,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+71f26627a3eece3e151c656115fe24ee,"washer,automatic washer,washing machine",washer,Ã‡amaÅŸÄ±r Makinesi,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+725bbfc557d3e1b9b5af85a5be833ee,"washer,automatic washer,washing machine",washer,Lave linge,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+74dc1a59c3585ed746cde67a6a1ea328,"washer,automatic washer,washing machine",washer,NTW4750YQ Amana 3.6 cu. ft. High-Efficiency Washer with Stainless Steel,Kitchen Room,Kitchen Room|Bathroom,Industrial,appliance,wall,1.0
+7da46c2fa47deac5f509767312277f4e,"washer,automatic washer,washing machine",washer,Ãrea de ServiÃ§o,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+7de9dc34c7230ca54d3df84a5eca1a73,"washer,automatic washer,washing machine",washer,Washing machine front loader,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+81c849960bdf3f1e91219aad82abc053,"washer,automatic washer,washing machine",washer,Siemens IQ500 WM14S496GB Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+81ecf0670ab97ff5fb23f72ec839c310,"washer,automatic washer,washing machine",washer,Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+828f6f95c6e8651691219aad82abc053,"washer,automatic washer,washing machine",washer,washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8340c44f09408180d122457e1745c167,"washer,automatic washer,washing machine",washer,Hotpoint WMA34 White 2001,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8405ab2d49b428b191219aad82abc053,"washer,automatic washer,washing machine",washer,BEKO WM6355W Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8797bf2bcd0c914dd6b976d6c56a2c0c,"washer,automatic washer,washing machine",washer,Zanussi Jetsystem washing Machine 2001,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+880a6bcedaeaed1fd095418bcfa348eb,"washer,automatic washer,washing machine",washer,Siemens Siwamat 61400,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8a0a7c14b9cd6489d202e705a59e5585,"washer,automatic washer,washing machine",washer,Ariston Margharita AR570T 1987,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8ba3bb4e5f54bc15eb2160f94b208571,"washer,automatic washer,washing machine",washer,LG Compact Front Load Washer and Dryer with Countertop,Kitchen Room,Kitchen Room|Bathroom,Minimalist,appliance,wall,1.0
+8c122f99b5a0aa047ca3f903b5926fb1,"washer,automatic washer,washing machine",washer,Washer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8d3cd0d2cf88b2c2a83d16be6f14bd8,"washer,automatic washer,washing machine",washer,Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8dee44b4cd1f34ac856e3ad6b24f68b2,"washer,automatic washer,washing machine",washer,WASHER AND DRYER,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8f9232a493ccf77e46cde67a6a1ea328,"washer,automatic washer,washing machine",washer,Washer and Dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+8fb4749a25eca524cba07fb2573fff75,"washer,automatic washer,washing machine",washer,Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+91cec7275a9b3266a6eaed098287ffd3,"washer,automatic washer,washing machine",washer,Generic washer and dryer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+91e432daef378b24553e9c84d5d40de4,"washer,automatic washer,washing machine",washer,Miele Premier 500 Novotronic Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+933dc825712acc8ab5a3b8119a3da34a,"washer,automatic washer,washing machine",washer,Ã§amasÄ±r makinasÄ±-washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+957ddf9eb718876dc2180858eb6a5f28,"washer,automatic washer,washing machine,dishwasher,dish washer,dishwashing machine",washer,dishwasher,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+969c60ef5f2c2fe696d5fa1ee6ada8d1,"washer,automatic washer,washing machine",washer,LG F1407ADSP5 Washer Dryer Combo,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+9ac5425b6c547d3d99373190f2d703c0,"washer,automatic washer,washing machine",washer,washer,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+9b1b90b033d6c6a42bf3161ae4fda942,"washer,automatic washer,washing machine",washer,Laundry sink,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+9b50ed5a7b980dea4572fbc715b752ca,"washer,automatic washer,washing machine",washer,Washing Machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+9b744b01aaed2d603ebd14c45634ff71,"washer,automatic washer,washing machine",washer,LB12Q  e LBT12 - Lavadora Blue Touch 12kg (Electrolux),Kitchen Room,Kitchen Room|Bathroom,Mediterranean,appliance,wall,1.0
+9cd0227494eeaafabd2a8bf2cac51544,"washer,automatic washer,washing machine",washer,Washing machine,Kitchen Room,Kitchen Room|Bathroom,Modern,appliance,wall,1.0
+9e991b898c6362977123ef821e961857,"washer,automatic washer,washing machine",washer,LBU15 - Lavadora Blue Touch Ultra Clean (Electrolux),Kitchen Room,Kitchen Room|Bathroom,Mediterranean,appliance,wall,1.0
+112624e40e96e5654a44340bf227e40,"microwave,microwave oven",microwave,"KCMS1555SSS  Kitchen RoomAid 1.5 Cu. Ft. Capacity, 1,200 Watts",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+11b6eb19d293f93676839a521e23c8fa,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+13290e02935a82a22846fa729d90e125,"microwave,microwave oven",microwave,Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+146d5859bbd8d629bbf88898fc491e0c,"microwave,microwave oven",microwave,microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+1508af47d1e83932a10831b4711b98b9,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+15ba6dd7a9ad8b12efe5f291bc2f5fd0,"microwave,microwave oven,desk",microwave,Room,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+15e1055bb947747048407a54b1fbfda8,"microwave,microwave oven",microwave,microwave oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+1605a1923b99fe6bdb4c5469c0c1ba80,"microwave,microwave oven",microwave,MERRYCHEF 1725 MICROWAVE OVEN,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+1674b409f2dda7774c86b1fdc94892eb,"microwave,microwave oven",microwave,GH7208XRB WhirlpoolÂ® 2.0 cu. ft. VelosÂ® SpeedCook Oven with Convection,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+16a1355b8749dcda33f93820d08ac745,"microwave,microwave oven",microwave,Micro-ondes Silvercrest - Silvercrest magnetron - Silvercrest microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+18234c941d0421729e8ab085b6e4d874,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+19362facbca806df178e7d331e641179,"microwave,microwave oven",microwave,"JMC2430WS 30"" Built-In Microwave Oven with Speed-Cook",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+1a79926636905e0ccb349a60fd15aa15,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+1f50be38c10cc2201c8302bff3c63802,"microwave,microwave oven",microwave,microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+2352e8aa50465297df3a1b0d597ce76e,"microwave,microwave oven",microwave,PEB2060SMSS GE Profileâ„¢ 2.0 Cu. Ft. Countertop Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+255a0ce59720bf24a53276bbe109327a,"microwave,microwave oven",microwave,Microonda,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+29012d42054b3a1087bcae7a654cc37,"microwave,microwave oven",microwave,Micro-ondas 18L Single Branco Brastemp - BMS25A,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+2a791816d868a81875782a1c52f768a9,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+2b7006326f739b3fe793cc5433bece89,"microwave,microwave oven",microwave,Miele Microgolfoven  M 8161,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+2c453abc6198b01d3f7f3ed2c3c690fe,"microwave,microwave oven",microwave,Microwave ETA,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+2ebe8d4adde5172dc4ffd3331f849437,"microwave,microwave oven",microwave,very nice microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+30e4d5f28706a95abf37a318b55c6a3c,"microwave,microwave oven",microwave,Kitchen RoomAid Built-In Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+30f4135ed68bff99186b61b33e112099,"microwave,microwave oven",microwave,DeLonghi 800W Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+31548a2ffbdeb4037b6fd5468f603b31,"microwave,microwave oven",microwave,microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+337b1db9d85de33b4a73e364671ba824,"microwave,microwave oven",microwave,AVint Keuken,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+33aeb6c217d9cf7e178e7d331e641179,"microwave,microwave oven",microwave,"JMW3430WS 30"" Combination Oven with V2â„¢ Vertical Dual-Fan Convection Sys",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+3420e627144ab8bcba7ad9409a09b1a9,"microwave,microwave oven",microwave,Microondas,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+3472585bf8e2cf3ddf3a1b0d597ce76e,"microwave,microwave oven",microwave,ZSA1201RSS - GE Monogram AdvantiumÂ® 120 Above-the-Cooktop Speedcooking Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+35cdd3a824ada16042725722166b0554,"microwave,microwave oven",microwave,Samsung MW1150WA,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+369e83693c7445a48ee2f8110bce2d6b,"microwave,microwave oven",microwave,Gucci Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+391c1645b46367067621f3e966f56f52,"microwave,microwave oven",microwave,microwave Kitchen Room,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+3a78c8e5c361ff554a44340bf227e40,"microwave,microwave oven",microwave,"KEMS378SSS Kitchen RoomAid Combination Oven | 27"" Width | 1.4 cu. ft. Microwave Capacity",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+3ba680a213e736bc23553854725256c2,"microwave,microwave oven",microwave,sharp r216ls compact microwave oven,Kitchen Room,Kitchen Room,Minimalist,appliance,counter,0.7
+3c475e459a7cf86a13508f8f9877b42a,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+400d1bc76504769c1d5ccc40b510e4bd,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+401d1543b0617914de2a9aaff52ac7,"microwave,microwave oven",microwave,Microwave - Microgolf,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+406dad41dfaeb674477dbb9bdedfcc,"microwave,microwave oven",microwave,microonde whirpool - monolocale 1.0 -,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+42753fd8af1477e019d629b015d21083,"microwave,microwave oven",microwave,Horno de Microondas,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+42aac49442bb9f8bb4e3935c6cee4b35,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+46dbba829a57ace8cffd61677456447e,"microwave,microwave oven",microwave,Oven - Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+479af1fbc8399fe47608168119193cbf,"microwave,microwave oven",microwave,Combi Oven - Forno Combinato Da Incasso,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4809d18c7a655877178e7d331e641179,"microwave,microwave oven",microwave,"JMW2327WS 27"" Combination Microwave/Wall Oven",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+48eecde6f71bc1a2f99d92708f91e592,"microwave,microwave oven",microwave,Built-in microwave SAMSUNG,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+495543ebd719a29ceeb8d422649e5f2b,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+49670b80947d34aca7f79a2a8b5d6e7f,"microwave,microwave oven",microwave,Microonda,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4ab6c77bf27d4c86b8776ad71dcaa161,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4b896032652578d8b5d95a89c22ce403,"microwave,microwave oven",microwave,"Distinctive 24"" Microwave",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4bf44e878bc9bc41ccd4500d193ab05f,"microwave,microwave oven",microwave,Large Wall-Mount Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4c9a1496692048922ec64b86eca750d,"microwave,microwave oven",microwave,Macsong Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4df99b98a1f4967ddf3a1b0d597ce76e,"microwave,microwave oven",microwave,JVM1790SK - GE Profileâ„¢ 1.7 Cu. Ft. Convection Over-the-Range Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4e0b08959229923f2ccf9daeb92717bc,"microwave,microwave oven",microwave,"Microondas (low poly, textures)",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+4f956e259344d4a3599fb6902c958d23,"microwave,microwave oven",microwave,Marshmallow In A Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+506ce52bbfc7adecdb94e9396a25f7f1,"microwave,microwave oven",microwave,Panasonic Genius Prestige Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+52000b7c14d7804e976040de71c9b526,"microwave,microwave oven",microwave,Table and microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+5392b189a357dbd6e5f8c8c5a6f910d5,"microwave,microwave oven",microwave,microwave oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+5874b21cb167217f4d9ddb9a204e75cd,"microwave,microwave oven",microwave,Microwave oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+5a933873658018998312881285c04cb3,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+5a98c841d578715e4a44340bf227e40,"microwave,microwave oven",microwave,"KEMS308SSS Kitchen RoomAid Combination Oven | 30"" Width | 1.4 cu. ft. Microwave Capacity",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+5b2633d960419bb2e5bf1ab8e7d0b,"microwave,microwave oven",microwave,"JMV9186WS 30"" Over-the-Range Microwave Oven with Convection",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+5f51f5e0607167b4178e7d331e641179,"microwave,microwave oven",microwave,"JMW2330WS 30"" Combination Microwave/Wall Oven",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+617358ef5ce2639ff5b1c85b3db5d1ce,"microwave,microwave oven",microwave,MICROWAVE,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+6216efeb4d5836d1efa585e146d1a8c9,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+624edb4561b948c1374efba5c7752da1,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+628ab6e5d0cf78b8931f48202f034c81,"microwave,microwave oven",microwave,Microonda Puerta de Espejo Marca Rania,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+67e4d0cf70b87600ddf024f7de40d58f,"microwave,microwave oven",microwave,Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+684b0477a4ffae9f92b1088bf3ddce02,"microwave,microwave oven",microwave,microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+6888d8702b758476fc350be62d126bad,"microwave,microwave oven",microwave,Microwave ovensâ€”å¾®æ³¢ç‚‰â€”01,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+6942c30f25bbcde7ced224a469840964,"microwave,microwave oven",microwave,SNABB W,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+698b37ec06448da7160ce9e819e30139,"microwave,microwave oven",microwave,MICROONDAS BRASTEMP INOX KING SIZE,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+6aa4b136ec94b46472a38ac2b8f5cd48,"microwave,microwave oven",microwave,Panasonic Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+6d8a8628eeb8ae92de6fb7d70c413eb,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+6dad0112ef18439cb7add4de9f6e92e1,"microwave,microwave oven",microwave,Microonda Panasonic Inverter,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+6db8ab6c9693a340575f4e5007488531,"microwave,microwave oven",microwave,Bosch 500 Series Over-the-Range Microwave HMV5051U - Stainless Steel,Kitchen Room,Kitchen Room,Industrial,appliance,counter,0.7
+70f55c83dccea88043c8f1cd479ffb1e,"microwave,microwave oven",microwave,Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+71221c380da96cbebe67d9b32c3ddf8,"microwave,microwave oven",microwave,Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+7431c55078a49981f557d80e0a8a9303,"microwave,microwave oven",microwave,Panasonic Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+753c4428f12b2233b5d3c5ea5d496caa,"microwave,microwave oven",microwave,Panasonic NE-1024,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+7672e8f619765cc51af9a5a7008cc3ec,"microwave,microwave oven",microwave,Horno compacto siemens HB86P572 de 45 cm de altura,Kitchen Room,Kitchen Room,Minimalist,appliance,counter,0.7
+77c4453bb4349e398128bc89a67202b0,"microwave,microwave oven",microwave,Microondas Panasonic,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+7acbd3fd7d1425e38f029c88b393c0c6,"microwave,microwave oven",microwave,microwave (stainless steal),Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+7b53aa1ce95b1efd1773834ba0a5df02,"microwave,microwave oven",microwave,Gommah Microwave (WIP),Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+7bce489081dd3a03379f47575c295bee,"microwave,microwave oven",microwave,Micro-ondas Brastemp Ative!,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+7cf2f3a1a3de48fda23949c21eddef76,"microwave,microwave oven",microwave,Microwave - Ryan Stewart,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+7d83379d6c2239393bf7bae2651d2cf,"microwave,microwave oven",microwave,micro ondas LG MH3046sp,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+81e961930e6ee5fd843f813f752a5e35,"microwave,microwave oven",microwave,Miele combi oven DGC 5080XL (black) 455x595x547,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+835ca5f3809182e86d1ffe1a45470ad7,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+86bda959021c63b48242cb5dc48c7177,"microwave,microwave oven",microwave,Countertop microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+87bae84777fe8b702bac1bcdfc2402d2,"microwave,microwave oven",microwave,Microwave Oven (116kb),Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+88e2e2446a3cd2816694e76612a795a6,"microwave,microwave oven",microwave,"Electrolux 30"" Over-The-Range Microwave",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+891f65c773939191c834958aed613724,"microwave,microwave oven",microwave,DC Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+8d94838d6ad21411df3a1b0d597ce76e,"microwave,microwave oven",microwave,PEM31SMSS GE Profile Spacemaker IIÂ® 1.0 Cu. Ft. Microwave Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+90ba871e45aa1d10b8bdb4201eaa026,"microwave,microwave oven",microwave,Sharp R252INW Mikrowelle (microwave),Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+9174b5b1b7306e1edf3a1b0d597ce76e,"microwave,microwave oven",microwave,PSB2201NSS GE Profile AdvantiumÂ® Wall Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+91aa6504b3900385df3a1b0d597ce76e,"microwave,microwave oven",microwave,"ZET1SMSS 30"" Built-In Electronic Convection Single Wall Oven",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+94c1905c213382a71a839a72929cc712,"microwave,microwave oven",microwave,microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+95bc6fb98624ea3229d75ea275a1cb4e,"microwave,microwave oven",microwave,Gaggenau-MicrovÃ¥gsugn BM220,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+a13b51c46b590287df75fdd4632be672,"microwave,microwave oven",microwave,Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+a4a556292a3d9395230584014222e685,"microwave,microwave oven",microwave,A MODERN MICROWAVE,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+a65e74617ff51c661b1fe5e2144bf114,"microwave,microwave oven",microwave,Phisycs Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+a91fc98fb71dfa46eed4b2bb88c072a8,"microwave,microwave oven",microwave,Samsung CM1929 Microwave,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.7
+1a98ec71c011d3c1980d7e8bc442d06e,stove,stove,Wood Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+1b625db2af8c02b04253be890e153964,stove,stove,JÃ¸tul stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+1d032da39f25772fc99ba9ee5d4194d,stove,stove,Electric Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+1d089370d1329dbaa2d703b56896de1b,stove,stove,Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+1d5eb167825bacba688d3cf9b52f4662,stove,stove,Wood Oven Italian Style for Pizza Bread and Roasted Food made by TheoPeir,Kitchen Room,Kitchen Room,European,appliance,counter,0.9
+1e2a3147e365744f41965be83b7745a,stove,stove,POELE 500 - FLAMNCO,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+2a5cd751b522d07dce1b91578a49ea56,stove,stove,StÃ»v 16 (68 x 61),Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+2b9af8c16f4b64595e5e29d9f2069262,stove,stove,Wood stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+2c0c7a289d37157ecd8f3fe9ca2145e1,stove,stove,GE Stainless Steel Range,Kitchen Room,Kitchen Room,Industrial,appliance,counter,0.9
+2c4eb370f10b4667e6a1cd9763fc2f3f,stove,stove,1966 Frigidaire Flair range,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+2cb7486cd0d713894c324889334fe6fb,stove,stove,German Corner Fireplace,Kitchen Room,Kitchen Room,European,appliance,counter,0.9
+2d5b7183f052b34f56efcb65c52d83a1,stove,stove,Rais Rondo wood stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+2de24aec04fa960a5eb64c1003065596,stove,stove,LORFLAM XP54 IN finition Graphite,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3aa97b75ff79a0594d1cd794fadc7ced,stove,stove,stuv-21-85,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3c7cb5ba87684ffaf5f4f288fb912362,stove,stove,Viking VGCC530_4B Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3e8165c41c526ea45eb64c1003065596,stove,stove,LORFLAM XP78 BOX posÃ© finition Black,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3ea1ace396f6ccae48407a54b1fbfda8,stove,stove,oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3ed7ea7c49a32247c4c2cb2195d7bfe5,stove,stove,Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+4a82d3e205075abdc5f3208c32f3ec87,stove,stove,"Kachelofen, Fireplaces, Herden, Stoves, Pec, krb, kamna, sporak, sparher",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+4bad13c2b787299241965be83b7745a,stove,stove,CheminÃ©e LINDA,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+58caa0426be5f71f41965be83b7745a,stove,stove,CheminÃ©e SERRANA,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+5b0c38cda43ebcb35a7e054e0372a0f,stove,stove,All-in-One Ultimate Kitchen Room,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+5b0e09f6f3579f45efb11e763be8310,stove,stove,Kitchen Room Stove With Microwave oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+5dd1c0efb1907528ff5687b000691cff,stove,stove,fogao_01,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+6fe99039481ce154c13f6e8e2f6bde6,stove,stove,Kitchen Room range and double oven at 60-in,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+7bddc990442a3c6ea8ab8175d04e5764,stove,stove,Stove - poÃªle,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+7c3287c18d2cff672e57a20276f6e9,stove,stove,Hearthstone Luno Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+7c82a4c439803269eacb651f5864b906,stove,stove,Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+8b3b891df4dfbe2d41965be83b7745a,stove,stove,CheminÃ©e ENORA,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+8bc67008044e0e8f843f813f752a5e35,stove,stove,"BOSCH, Gaskookplaat - Zwart Hardglas, 60 cm PPP616B21E (58 x 590 x 520)",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+8c2491e5245804d1ffc6e457221b9271,stove,stove,90cm Dual Fuel 6 Burner Stove - GR3606SA - Klasse,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+8ff18f81de484792f0b94599b4efe81,stove,stove,stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+9a5ece8646e88468877a6b14ac3aa8fd,stove,stove,Vermont Castings Radiance,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+9aaca16b41037ccdb4522b651100b435,stove,stove,Heat & Glo - Paloma Gas Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+9bc1d272c82f528376a2788017b16c37,stove,stove,Vulcan - Modular Gas Range,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+9fde0df9146d61f119bea36737d5c9cb,stove,stove,Falcon Deluxe 110,Kitchen Room,Kitchen Room,Light Luxury,appliance,counter,0.9
+108f01e1b4fbab56557991c690a01e0,stove,stove,Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+10f1eb0113a6340e35914415372cbccb,stove,stove,Vermont Castings Intrepid II-borduex,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+15e020e34e3d2bba60ddc468fe733ed1,stove,stove,Stove1,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+177fedf455e50b4d352845ab138522d8,stove,stove,Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+23ea5db3e8c4eb2a99762eab905e5e24,stove,stove,Ð¿ÐµÑ‡ÑŒ,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+24dfeb26cc47a046e6fbf2f5ae574e36,stove,stove,Herd,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+270e25863ba6098b0a04bc414beaa99,stove,stove,Gas on Glass Cooktop,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+27cebdcd07cf90aa500158c23c4c5a8e,stove,stove,Stove Top 1,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+27e067d588f8fa27ae410fdebd404ac2,stove,stove,stuv-21-75,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+287fd6b1b61269907fa354dc1b904bdd,stove,stove,Wood stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+298fc1492df14dbc96c91a9093ecb199,stove,stove,Coleman 500A Campstove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+32fef525b8b75d2bdd833638fb82f742,stove,stove,Ilve Professional Plus Nostalgie PTN100,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+33cc4ac44ff34a789f71457a3f84fcdb,stove,stove,stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+355f5eea3905262d54665a4e9c906cd4,stove,stove,cooker,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+38cc2f381576c90e36f5739020329c46,stove,stove,Stove Soba Komur Odun Winter Coal Wood Kis Burn Fire Ates Alev Yakmak,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+39a419de848fdf542a2fbf58d878928,stove,stove,gas stove black,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+40c7d35e40916b3d9c50c94ef954cbe9,stove,stove,Esse Ironheart Multi-fuel Cooker,Kitchen Room,Kitchen Room,Industrial,appliance,counter,0.9
+41d11126029f5b98e793cc5433bece89,stove,stove,Falcon Elise 110 Chinees blauw (1092x910x595),Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+41da6df6f2a4e48b5e4e23ed78187234,stove,stove,ATAG HG1471MBA gas stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+44d882d8627163957a35fac374dd53e8,stove,stove,Magic Chef CGR3742CDT Gas Range,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+44fe1c2abda6a722e793cc5433bece89,stove,stove,Lacanche Cormatin 70 terracotta (700x900x650).,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+45c494c0219a5ffaccb5c4dc056b97e2,stove,stove,Jotul (JÃ¸tul)118 Wood Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+47c68395a5775e10d9deb3f829cc2475,stove,stove,Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+48b9c0c72db0859cc0fd596e40539,stove,stove,Stove/Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+48d103efdc593eb9397a815191739e2e,stove,stove,wood burning stove with oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+50c1f300272df84cd696cc46feeb6125,stove,stove,electric stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+510d5da107f80051e1d0950dd1aa903d,stove,stove,Oven grey 1,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+52d465df8deb8d51908e9df84c8bf032,stove,stove,Kitchen Room Counter,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+54b9ac27f2bae92627a11dcb35000f7a,stove,stove,Gas Range,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+558f7129b2b31c34134a4ff70ce43955,stove,stove,Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+563f955f46e4368d8ae69567bc5a3efb,stove,stove,Wood stove fireplace,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+601c1c3d98596cc34a60c1a189046dd1,stove,stove,Stove/Oven UA Plumbers Local 159,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+64f6f5a386e63a1d5eb64c1003065596,stove,stove,LORFLAM XP68 BOX sur pied finition Black,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+650ab459ed284b4349bd139dfeecc324,stove,stove,oven/stove combo,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+65eb72bf33da5b1511ff208156ce047,stove,stove,Medium Wood Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+68bd9efe9fc3373f47622e8cc2e641a4,stove,stove,Wooden stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+69ad4c4dab82ce29a642711976cdde72,stove,stove,Wood burning stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+69d2d6bab648bcb487dd60af81c93a3c,stove,stove,Piano Cottura Ariston,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+72a0fcf0b41e788935914415372cbccb,stove,stove,Vermont Castings Radiance stove-bordeux,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+74b1c02e8862abdf1d1f7b2cee80fcdc,stove,stove,"Detailed Stove 30""",Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+826cea6d1387d794e793cc5433bece89,stove,stove,Lacanche Voltenay 150 zwart (1500x900x650).,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+82cdf477807e2af5eb64c1003065596,stove,stove,LORFLAM VS80,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+82f134ee4f0dc5ce74dfd914e703ac1f,stove,stove,Stove/Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+830b31818f5b91474efc7e7114f1b9c5,stove,stove,Fireplace,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+83be70da0f3def9cc1b69d6ad297ed35,stove,stove,2 stove stainless counter,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+86a46629a011d6adac7bed72580dc30f,stove,stove,Kitchen Room stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+898c20d376d7d44e5eb64c1003065596,stove,stove,PoÃªle acier OFEN 9,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3005a944902cf639fc1390934d948e09,stove,stove,Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3486e9ea474af3ebe793cc5433bece89,stove,stove,Lacanche Sully  140 bourgondisch rood (1405x900x650),Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+3586a28ad9ad3aa8230584014222e685,stove,stove,ELETRIC STOVE,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+4346f26dfcfd5b9c869bb2e9e5b3d44,stove,stove,MUCCO all-in-one Kitchen Room,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+4979ab695941487a40b559ef47048b86,stove,stove,Simpson Neptune Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+6265be481c953acd8c159f8d5e761b17,stove,stove,antiquealike gas stove,Kitchen Room,Kitchen Room,Vintage/Retro,appliance,counter,0.9
+902f4ee7655514ba109dc73fee74b150,stove,stove,Smeg A11X Freestanding Oven & Cooktop,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+93ebe284d3d0f9d65e723252788c3d6e,stove,stove,Oven,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+966ea3afa71e3a574bba687d3dbe6227,stove,stove,My Granite Soapstone Wood Burning Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+993d687908792787672e57a20276f6e9,stove,stove,Hearthstone Bari Stove,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+994e7339a67306d75eb64c1003065596,stove,stove,PoÃªle acier OFEN 8 Acier,Kitchen Room,Kitchen Room,Modern,appliance,counter,0.9
+99f1b9951d4ad128453c30eadc73690,stove,stove,"Wolf 48"" French Range Top",Kitchen Room,Kitchen Room,European,appliance,counter,0.9

@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: roomvisualizer-ai
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app

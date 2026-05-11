@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pkl
+.env
+
+temp/
+uploads/
+
+firebase/*.json
+models/*.pkl

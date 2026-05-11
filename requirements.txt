@@ -1,0 +1,15 @@
+flask==3.0.3
+gunicorn==22.0.0
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+joblib
+pillow
+opencv-python-headless
+firebase-admin
+python-dotenv
+openpyxl
+requests
+gdown
