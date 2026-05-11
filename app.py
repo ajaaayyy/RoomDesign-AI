@@ -112,20 +112,25 @@ SMART_METADATA_CACHE = {}
 # =========================================================
 # LOAD MODELS + DATA
 # =========================================================
-download_file_if_missing(
-    DEPTH_MODEL_FILE_ID,
-    DEPTH_MODEL_PATH
-)
-
-download_file_if_missing(
-    SCALE_MODEL_FILE_ID,
-    SCALE_MODEL_PATH
-)
-
 depth_model = None
 scale_model = None
+
 def get_models():
     global depth_model, scale_model
+
+    if not os.path.exists(DEPTH_MODEL_PATH):
+        print("⬇️ Downloading depth model...")
+        download_file_if_missing(
+            DEPTH_MODEL_FILE_ID,
+            DEPTH_MODEL_PATH
+        )
+
+    if not os.path.exists(SCALE_MODEL_PATH):
+        print("⬇️ Downloading scale model...")
+        download_file_if_missing(
+            SCALE_MODEL_FILE_ID,
+            SCALE_MODEL_PATH
+        )
 
     if depth_model is None:
         print("Loading depth model...")
@@ -1331,8 +1336,6 @@ def build_model_features(row, room_type, room_width, room_length, room_height):
         feature_row[f"recommendation_{rank}_source"] = safe_str(row.get(f"recommendation_{rank}_source"), "unknown")
 
     return pd.DataFrame([feature_row])
-
-depth_model, scale_model = get_models()
 
 def predict_ai_depth(row, room_type, room_width, room_length, room_height):
     X = build_model_features(row, room_type, room_width, room_length, room_height)
