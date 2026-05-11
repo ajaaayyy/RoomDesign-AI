@@ -1,4 +1,5 @@
 import time
+import os
 import math
 import random
 import traceback
@@ -2711,12 +2712,22 @@ def home():
 
 
 if __name__ == "__main__":
-    worker_thread = Thread(target=firestore_worker)
-    worker_thread.daemon = True
-    worker_thread.start()
+    try:
+        print("🚀 Starting Flask app...")
 
-    import os
+        worker_thread = Thread(target=firestore_worker)
+        worker_thread.daemon = True
+        worker_thread.start()
 
-port = int(os.environ.get("PORT", 10000))
-print("🚀 Flask starting...")
-app.run(host="0.0.0.0", port=port)
+        port = int(os.environ.get("PORT", 10000))
+
+        app.run(
+            host="0.0.0.0",
+            port=port,
+            debug=True
+        )
+
+    except Exception as e:
+        import traceback
+        print("❌ APP START FAILED:")
+        traceback.print_exc()
