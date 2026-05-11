@@ -1,20 +1,18 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 flask==3.0.3
 gunicorn==22.0.0
 
-torch==2.11.0
-torchvision==0.26.0
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
 
-numpy==2.2.6
-pandas==2.2.3
+pandas
+numpy
 scikit-learn==1.6.1
-joblib==1.4.2
-
-opencv-python-headless==4.10.0.84
-
-firebase-admin==6.5.0
-google-cloud-firestore==2.16.0
-
-python-dotenv==1.0.1
-openpyxl==3.1.5
-gdown==5.2.0
-requests==2.32.3
+joblib
+pillow
+opencv-python-headless
+firebase-admin
+python-dotenv
+openpyxl
+gdown

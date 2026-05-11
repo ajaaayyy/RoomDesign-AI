@@ -122,8 +122,20 @@ download_file_if_missing(
     SCALE_MODEL_PATH
 )
 
-depth_model = joblib.load(DEPTH_MODEL_PATH)
-scale_model = joblib.load(SCALE_MODEL_PATH)
+depth_model = None
+scale_model = None
+def get_models():
+    global depth_model, scale_model
+
+    if depth_model is None:
+        print("Loading depth model...")
+        depth_model = joblib.load(DEPTH_MODEL_PATH)
+
+    if scale_model is None:
+        print("Loading scale model...")
+        scale_model = joblib.load(SCALE_MODEL_PATH)
+
+    return depth_model, scale_model
 
 # =========================================================
 # MIDAS DEPTH ESTIMATION
@@ -1320,6 +1332,7 @@ def build_model_features(row, room_type, room_width, room_length, room_height):
 
     return pd.DataFrame([feature_row])
 
+depth_model, scale_model = get_models()
 
 def predict_ai_depth(row, room_type, room_width, room_length, room_height):
     X = build_model_features(row, room_type, room_width, room_length, room_height)
