@@ -4,7 +4,7 @@ import math
 import random
 import traceback
 import cv2
-from flask import app
+from flask import Flask
 import requests
 #import torch
 import gdown
@@ -22,7 +22,7 @@ import re
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-
+app = Flask(__name__)
 # =========================================================
 # CONFIG
 # =========================================================
