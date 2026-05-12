@@ -241,7 +241,7 @@ def normalize_room_label_app(value):
 
     return fixes.get(value, value)
 
-
+load_datasets()
 if "room_type" in df_master.columns:
     df_master["room_type"] = df_master["room_type"].apply(normalize_room_label_app)
 
