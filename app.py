@@ -39,8 +39,7 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 
 FIREBASE_CRED_PATH = os.path.join(
     BASE_PATH,
-    "firebase",
-    "roomvisualizer-f206e-firebase-adminsdk-fbsvc-ca71a15e25.json"
+    "firebase-key.json"
 )
 
 # =========================================================
@@ -1873,13 +1872,17 @@ def generate_spatial_layout(item, anchors, scene_meta, room_type):
     # DEPTH-AWARE FLOOR VALIDATION
     # =====================================================
 
+    local_depth = 0.5
+
     if depth_map is not None:
-        
-        local_depth = sample_local_depth(
+
+        local_depth = (
+        sample_local_depth(
             depth_map,
             x_norm,
             z_norm
         )
+    )
 
     # Avoid extremely shallow areas
     if local_depth < 0.18:
