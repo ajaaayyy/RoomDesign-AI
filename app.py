@@ -38,7 +38,7 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 FIREBASE_CRED_PATH = os.path.join(
     BASE_PATH,
     "firebase",
-    "roomvisualizer-f206e-firebase-adminsdk-fbsvc-ca71a15e25.json"
+    "roomvisualizer-f206e-firebase-adminsdk-fbsvc-9f1e33245a.json"
 )
 
 # =========================================================
@@ -774,6 +774,25 @@ def analyze_room_image_metadata(image_url: str):
 
         h, w = image_bgr.shape[:2]
         print(f"[IMAGE] loaded image {w}x{h}")
+        MAX_SIZE = 1280
+
+        if max(h, w) > MAX_SIZE:
+          scale = MAX_SIZE / max(h, w)
+
+        image_bgr = cv2.resize(
+            image_bgr,
+            (int(w * scale), int(h * scale))
+        )
+
+        h, w = image_bgr.shape[:2]
+
+        print(f"[RESIZED] {w}x{h}")
+        
+        depth_map = estimate_depth_map(image_bgr)
+        import gcgc.collect()
+
+     if depth_map is None:
+        return meta
 
         depth_map = estimate_depth_map(image_bgr)
         if depth_map is None:
