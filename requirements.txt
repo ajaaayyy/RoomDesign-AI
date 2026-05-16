@@ -5,6 +5,9 @@ gunicorn==22.0.0
 
 torch==2.2.2+cpu
 torchvision==0.17.2+cpu
+torchaudio==2.2.2+cpu
+
+transformers==4.41.2
 
 numpy==1.26.4
 pandas==2.2.3
@@ -17,3 +20,4 @@ firebase-admin
 python-dotenv
 openpyxl
 gdown
+requests
