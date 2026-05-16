@@ -28,7 +28,7 @@ app = Flask(__name__)
 
 room_classifier = pipeline(
     "image-classification",
-    model="nateraw/resnet50-places365"
+    model="microsoft/resnet-50"
 )
 
 # =========================================================
