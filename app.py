@@ -26,62 +26,209 @@ from firebase_admin import credentials, firestore
 
 app = Flask(__name__)
 
-# =========================================================
-# ULTRA STRICT ROOM-ONLY VALIDATOR
-# =========================================================
-
 room_classifier = pipeline(
     "image-classification",
-    model="google/vit-base-patch16-224"
+    model="nateraw/resnet50-places365"
 )
 
+# =========================================================
+# ROOM / INDOOR KEYWORDS
+# =========================================================
+
 ROOM_KEYWORDS = [
-    "living room",
+
+    # MAIN ROOM TYPES
     "bedroom",
+    "living room",
     "kitchen",
     "bathroom",
+    "dining room",
     "hotel room",
     "office",
+    "classroom",
     "conference room",
-    "dining room",
-    "interior",
-    "room",
-    "apartment",
-    "house",
-    "indoors",
-    "lobby",
+    "library",
     "hallway",
     "corridor",
+    "apartment",
+    "studio apartment",
+
+    # GENERAL INTERIOR
+    "interior",
+    "indoor",
+    "indoors",
+    "home",
+    "house",
+    "room",
+    "building",
+
+    # EMPTY / UNFINISHED ROOM LABELS
+    "cell",
+    "prison",
+    "vault",
+    "basement",
+    "attic",
+    "garage",
+    "closet",
+
+    # ROOM STRUCTURE
+    "wall",
+    "floor",
+    "ceiling",
+    "window",
+    "door",
+
+    # ROOM FURNITURE
+    "bed",
+    "sofa",
+    "chair",
+    "table",
+    "desk",
+    "cabinet",
+    "wardrobe",
+    "television",
+    "lamp",
 ]
 
-def is_valid_room_image(image_path):
-    try:
-        image = Image.open(image_path)
+# =========================================================
+# NON-ROOM / OUTDOOR KEYWORDS
+# =========================================================
 
+NON_ROOM_KEYWORDS = [
+
+    # OUTDOOR
+    "forest",
+    "mountain",
+    "beach",
+    "ocean",
+    "river",
+    "waterfall",
+    "desert",
+    "highway",
+    "street",
+    "park",
+    "stadium",
+    "farm",
+    "garden",
+    "field",
+    "jungle",
+    "sky",
+
+    # ANIMALS
+    "dog",
+    "cat",
+    "bird",
+    "horse",
+    "cow",
+    "fish",
+
+    # PEOPLE
+    "person",
+    "people",
+    "man",
+    "woman",
+    "boy",
+    "girl",
+    "human",
+    "face",
+
+    # FOOD
+    "pizza",
+    "burger",
+    "cake",
+    "banana",
+    "apple",
+
+    # RANDOM OBJECTS
+    "paper",
+    "notebook",
+    "book",
+    "pen",
+    "pencil",
+    "bottle",
+    "cup",
+    "phone",
+    "laptop",
+    "keyboard",
+    "shoe",
+    "shirt",
+]
+
+# =========================================================
+# VALIDATE ROOM IMAGE
+# =========================================================
+
+def is_valid_room_image(image_path):
+
+    try:
+
+        # ================================
+        # LOAD IMAGE
+        # ================================
+        image = Image.open(image_path).convert("RGB")
+
+        # ================================
+        # RUN SCENE CLASSIFIER
+        # ================================
         results = room_classifier(image)
 
-        print("[ROOM VALIDATION]", results)
+        print("\n==============================")
+        print("[ROOM VALIDATION RESULTS]")
+        print("==============================")
 
-        # ONLY inspect top predictions
-        top_results = results[:5]
+        top_results = results[:10]
 
+        room_score = 0.0
+        non_room_score = 0.0
+
+        # ================================
+        # ANALYZE RESULTS
+        # ================================
         for r in top_results:
+
             label = r["label"].lower()
-            score = r["score"]
+            score = float(r["score"])
 
-            print(f"[CHECK] {label} = {score:.3f}")
+            print(f"[CHECK] {label} = {score:.4f}")
 
-            # if ANY strong room label exists → allow
+            # ============================
+            # ROOM SCORE
+            # ============================
             if any(keyword in label for keyword in ROOM_KEYWORDS):
-                if score > 0.20:
-                    print("[ROOM VALIDATION] valid room detected")
-                    return True
+                room_score += score
 
-        # otherwise reject EVERYTHING
-        print("[ROOM VALIDATION] no room detected")
+            # ============================
+            # NON-ROOM SCORE
+            # ============================
+            if any(keyword in label for keyword in NON_ROOM_KEYWORDS):
+                non_room_score += score
+
+        print("\n==============================")
+        print(f"[ROOM SCORE] {room_score:.4f}")
+        print(f"[NON-ROOM SCORE] {non_room_score:.4f}")
+        print("==============================")
+
+        # =====================================================
+        # ACCEPT ROOM
+        # =====================================================
+        # Accept if indoor score dominates
+        # even unfinished or empty rooms.
+        # =====================================================
+
+        if room_score >= non_room_score:
+
+            print("[ROOM VALIDATION] VALID ROOM ✅")
+            return True
+
+        # =====================================================
+        # REJECT NON-ROOM
+        # =====================================================
+
+        print("[ROOM VALIDATION] INVALID ROOM ❌")
         return False
 
     except Exception as e:
+
         print("[ROOM VALIDATION ERROR]", e)
         return False
 # ========================================================
