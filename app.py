@@ -36,23 +36,156 @@ room_classifier = pipeline(
 )
 
 ROOM_KEYWORDS = [
+    # MAIN ROOM TYPES
     "living room",
     "bedroom",
     "kitchen",
     "bathroom",
+    "dining room",
+    "guest room",
+    "hotel room",
+    "apartment",
+    "studio apartment",
+    "office",
+    "conference room",
+    "meeting room",
+    "classroom",
+    "library",
+    "lobby",
+    "hallway",
+    "corridor",
+    "attic",
+    "basement",
+    "closet",
+    "walk-in closet",
+    "laundry room",
+    "pantry",
+    "garage",
+    "home theater",
+    "game room",
+    "music room",
+    "gym",
+    "spa",
+    "sauna",
+
+    # GENERAL INTERIOR WORDS
     "interior",
     "room",
-    "studio couch",
-    "home theater",
-    "dining table",
-    "restaurant",
-    "hotel room",
-    "lobby",
-    "apartment",
-    "office",
-    "library",
+    "indoors",
+    "indoor",
+    "house",
+    "home",
+    "building",
+    "architecture",
+
+    # WALL / FLOOR / CEILING
+    "wall",
+    "floor",
+    "ceiling",
+    "tile roof",
+    "window shade",
+    "window screen",
+    "window",
+    "door",
+    "curtain",
+    "blinds",
+    "fireplace",
+    "stairs",
+    "railing",
+
+    # LIVING ROOM FURNITURE
+    "sofa",
+    "couch",
+    "sectional",
+    "loveseat",
+    "armchair",
+    "recliner",
+    "coffee table",
+    "tv stand",
+    "television",
+    "bookshelf",
+    "bookcase",
+    "side table",
+    "console table",
+    "ottoman",
+
+    # BEDROOM FURNITURE
+    "bed",
+    "bunk bed",
+    "crib",
+    "mattress",
     "wardrobe",
-    "cabinet"
+    "dresser",
+    "nightstand",
+    "vanity",
+    "mirror",
+
+    # DINING
+    "dining table",
+    "dining chair",
+    "bar stool",
+    "barstool",
+
+    # OFFICE
+    "desk",
+    "office chair",
+    "computer desk",
+    "monitor",
+
+    # KITCHEN
+    "refrigerator",
+    "fridge",
+    "microwave",
+    "oven",
+    "stove",
+    "cooktop",
+    "dishwasher",
+    "kitchen island",
+    "sink",
+    "cabinet",
+    "countertop",
+
+    # BATHROOM
+    "bathtub",
+    "toilet",
+    "shower",
+    "washbasin",
+    "faucet",
+    "mirror",
+
+    # LIGHTING
+    "lamp",
+    "floor lamp",
+    "table lamp",
+    "wall lamp",
+    "ceiling lamp",
+    "pendant lamp",
+    "chandelier",
+    "lighting",
+
+    # DECOR
+    "plant",
+    "rug",
+    "carpet",
+    "painting",
+    "picture frame",
+    "vase",
+    "clock",
+
+    # ARCHITECTURAL SPACES
+    "atrium",
+    "courtyard",
+    "balcony",
+    "terrace",
+
+    # COMMON FALSE-POSITIVE INTERIOR LABELS
+    "vault",
+    "monastery",
+    "church",
+    "restaurant",
+    "cafe",
+    "shop",
+    "store",
 ]
 
 def is_valid_room_image(image_path):
@@ -95,8 +228,7 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 
 FIREBASE_CRED_PATH = os.path.join(
     BASE_PATH,
-    "firebase",
-    "roomvisualizer-f206e-firebase-adminsdk-fbsvc-9f1e33245a.json"
+    "firebase-key.json"
 )
 
 # =========================================================
