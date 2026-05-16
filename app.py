@@ -787,14 +787,13 @@ def analyze_room_image_metadata(image_url: str):
         h, w = image_bgr.shape[:2]
 
         print(f"[RESIZED] {w}x{h}")
+
         
         depth_map = estimate_depth_map(image_bgr)
-        import gcgc.collect()
 
-     if depth_map is None:
-        return meta
+        import gc
+        gc.collect()
 
-        depth_map = estimate_depth_map(image_bgr)
         if depth_map is None:
             return meta
 
@@ -2741,10 +2740,11 @@ if __name__ == "__main__":
         port = int(os.environ.get("PORT", 10000))
 
         app.run(
-            host="0.0.0.0",
-            port=port,
-            debug=True
-        )
+    host="0.0.0.0",
+    port=10000,
+    debug=False,
+    use_reloader=False
+)
 
     except Exception as e:
         import traceback
