@@ -27,13 +27,32 @@ from firebase_admin import credentials, firestore
 app = Flask(__name__)
 
 # =========================================================
-# ROOM IMAGE VALIDATOR
+# ULTRA STRICT ROOM-ONLY VALIDATOR
 # =========================================================
 
 room_classifier = pipeline(
     "image-classification",
     model="google/vit-base-patch16-224"
 )
+
+ROOM_KEYWORDS = [
+    "living room",
+    "bedroom",
+    "kitchen",
+    "bathroom",
+    "hotel room",
+    "office",
+    "conference room",
+    "dining room",
+    "interior",
+    "room",
+    "apartment",
+    "house",
+    "indoors",
+    "lobby",
+    "hallway",
+    "corridor",
+]
 
 def is_valid_room_image(image_path):
     try:
@@ -43,59 +62,28 @@ def is_valid_room_image(image_path):
 
         print("[ROOM VALIDATION]", results)
 
-        NON_ROOM_KEYWORDS = [
-            "dog",
-            "cat",
-            "bird",
-            "person",
-            "man",
-            "woman",
-            "face",
-            "selfie",
-            "food",
-            "pizza",
-            "burger",
-            "car",
-            "vehicle",
-            "truck",
-            "bus",
-            "motorcycle",
-            "bicycle",
-            "paper",
-            "document",
-            "book",
-            "notebook",
-            "pen",
-            "phone",
-            "laptop",
-            "computer",
-            "tv",
-            "television",
-            "shoe",
-            "shirt",
-            "dress",
-            "tree",
-            "flower",
-            "animal",
-        ]
+        # ONLY inspect top predictions
+        top_results = results[:5]
 
-        for r in results[:5]:
+        for r in top_results:
             label = r["label"].lower()
             score = r["score"]
 
             print(f"[CHECK] {label} = {score:.3f}")
 
-            if any(keyword in label for keyword in NON_ROOM_KEYWORDS):
-                if score > 0.70:
-                    print("[ROOM VALIDATION] obvious non-room image")
-                    return False
+            # if ANY strong room label exists → allow
+            if any(keyword in label for keyword in ROOM_KEYWORDS):
+                if score > 0.20:
+                    print("[ROOM VALIDATION] valid room detected")
+                    return True
 
-        return True
+        # otherwise reject EVERYTHING
+        print("[ROOM VALIDATION] no room detected")
+        return False
 
     except Exception as e:
         print("[ROOM VALIDATION ERROR]", e)
-
-        return True
+        return False
 # ========================================================
 # CONFIG
 # =========================================================
