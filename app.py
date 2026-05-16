@@ -3,11 +3,10 @@ import os
 import math
 import random
 import traceback
-from unicodedata import category
 import cv2
 from flask import Flask
 import requests
-# import torch
+import torch
 import gdown
 import cv2
 from collections import deque
@@ -22,7 +21,6 @@ import re
 
 import firebase_admin
 from firebase_admin import credentials, firestore
-from scipy import spatial
 
 app = Flask(__name__)
 # =========================================================
@@ -39,7 +37,8 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 
 FIREBASE_CRED_PATH = os.path.join(
     BASE_PATH,
-    "firebase-key.json"
+    "firebase",
+    "roomvisualizer-f206e-firebase-adminsdk-fbsvc-ca71a15e25.json"
 )
 
 # =========================================================
@@ -634,39 +633,6 @@ def compute_room_open_space(usable_regions, image_shape):
         "usable_center_x": float(center_x),
         "usable_floor_y": float(floor_y),
     }
-# =========================================================
-# LOCAL DEPTH SAMPLING
-# =========================================================
-def sample_local_depth(
-    depth_map,
-    x_norm,
-    y_norm
-):
-    if depth_map is None:
-        return 0.5
-
-    h, w = depth_map.shape
-
-    px = int(clamp01(x_norm) * (w - 1))
-    py = int(clamp01(y_norm) * (h - 1))
-
-    radius = 12
-
-    x1 = max(0, px - radius)
-    x2 = min(w, px + radius)
-
-    y1 = max(0, py - radius)
-    y2 = min(h, py + radius)
-
-    patch = depth_map[
-            y1:y2,
-            x1:x2
-        ]
-
-    if patch.size == 0:
-        return 0.5
-
-    return float(np.mean(patch))
 
 
 # =========================================================
@@ -830,9 +796,6 @@ def analyze_room_image_metadata(image_url: str):
         meta["wall_lines"] = wall_lines
         meta["windows"] = windows
         meta["doors"] = doors
-        meta["depth_map"] = depth_map
-        meta["floor_mask"] = floor_mask
-        meta["usable_regions"] = usable_regions
 
         print("[IMAGE] scene analysis complete")
         print(meta)
@@ -1436,122 +1399,76 @@ def apply_smart_metadata(pred):
     return pred
 
 
+# =========================================================
+# UNIVERSAL SPATIAL RULES
+# =========================================================
 SPATIAL_RULES = {
-
-    # =====================================================
-    # LIVING ROOM
-    # =====================================================
-
-    "Three-Seat / Multi-seat Sofa": {
-        "placement_type": "against_wall",
-        "preferred_wall": "back_wall",
-        "face_room": True
-    },
-
-    "Loveseat Sofa": {
-        "placement_type": "against_wall",
-        "preferred_wall": "back_wall",
-        "face_room": True
-    },
-
-    "L-shaped Sofa": {
-        "placement_type": "against_wall",
-        "preferred_wall": "corner_wall",
-        "face_room": True
-    },
-
-    "TV Stand": {
-        "placement_type": "against_wall",
-        "preferred_wall": "front_wall",
-        "face_anchor": True,
-        "anchor_target": "Sofa"
-    },
-
-    "Coffee Table": {
-        "placement_type": "center_anchor"
-    },
-
-    # =====================================================
-    # BEDROOM
-    # =====================================================
-
     "King-size Bed": {
-        "placement_type": "against_wall",
+        "placement": "against_wall",
         "preferred_wall": "back_wall",
-        "headboard_wall": True
+        "clearance_front": 0.25,
+        "support_surface": "floor",
     },
-
     "Single bed": {
-        "placement_type": "against_wall",
-        "preferred_wall": "side_wall",
-        "headboard_wall": True
+        "placement": "against_wall",
+        "preferred_wall": "back_wall",
+        "clearance_front": 0.25,
+        "support_surface": "floor",
     },
-
-    "Wardrobe": {
-        "placement_type": "against_wall",
-        "preferred_wall": "side_wall"
-    },
-
-    "Nightstand": {
-        "placement_type": "beside_anchor",
-        "anchor_target": "Bed"
-    },
-
-    # =====================================================
-    # DINING
-    # =====================================================
-
-    "Dining Table": {
-        "placement_type": "center_anchor"
-    },
-
     "Dining Chair": {
-        "placement_type": "surround_anchor",
-        "anchor_target": "Dining Table"
+        "placement": "near_anchor",
+        "anchor_types": ["Dining Table"],
+        "distance": 0.12,
+        "face_anchor": True,
+        "support_surface": "floor",
     },
-
-    # =====================================================
-    # KITCHEN
-    # =====================================================
-
-    "Refrigerator": {
-        "placement_type": "against_wall",
-        "preferred_wall": "kitchen_wall"
+    "Lounge Chair / Cafe Chair / Office Chair": {
+        "placement": "near_anchor",
+        "anchor_types": ["Desk", "Coffee Table"],
+        "distance": 0.12,
+        "face_anchor": True,
+        "support_surface": "floor",
     },
-
-    "Sink": {
-        "placement_type": "against_wall",
-        "preferred_wall": "plumbing_wall"
+    "Dining Table": {
+        "placement": "center",
+        "support_surface": "floor",
     },
-
-    "Stove": {
-        "placement_type": "against_wall",
-        "preferred_wall": "kitchen_wall"
+    "Coffee Table": {
+        "placement": "front_of_anchor",
+        "anchor_types": ["Three-Seat / Multi-seat Sofa"],
+        "distance": 0.18,
+        "support_surface": "floor",
     },
-
-    "Kitchen Cabinet": {
-        "placement_type": "against_wall",
-        "preferred_wall": "kitchen_wall"
+    "Pendant Lamp": {
+        "placement": "above_anchor",
+        "anchor_types": ["King-size Bed", "Dining Table", "Coffee Table"],
+        "support_surface": "ceiling",
+        "allow_intersection": False,
+        "height_offset": 0.25,
     },
-
-    # =====================================================
-    # BATHROOM
-    # =====================================================
-
-    "Toilet": {
-        "placement_type": "against_wall",
-        "preferred_wall": "plumbing_wall"
+    "Ceiling Lamp": {
+        "placement": "ceiling_center",
+        "support_surface": "ceiling",
     },
-
-    "Bathroom Sink": {
-        "placement_type": "against_wall",
-        "preferred_wall": "plumbing_wall"
+    "Wall Lamp": {
+        "placement": "wall_attached",
+        "support_surface": "wall",
     },
-
-    "Shower": {
-        "placement_type": "against_wall",
-        "preferred_wall": "back_wall"
-    }
+    "Floor Lamp": {
+        "placement": "corner",
+        "support_surface": "floor",
+    },
+    "Wardrobe": {
+        "placement": "against_wall",
+        "preferred_wall": "side_wall",
+        "support_surface": "floor",
+    },
+    "TV Stand": {
+        "placement": "opposite_anchor",
+        "anchor_types": ["Three-Seat / Multi-seat Sofa"],
+        "face_anchor": True,
+        "support_surface": "floor",
+    },
 }
 
 OBJECT_BEHAVIOR = {
@@ -1567,135 +1484,20 @@ OBJECT_BEHAVIOR = {
 }
 
 OBJECT_FOOTPRINTS = {
-
-    # =====================================================
-    # LIVING ROOM
-    # =====================================================
-
-    "Three-Seat / Multi-seat Sofa": {
-        "width": 2.4,
-        "depth": 1.1,
-        "clearance": 0.6
-    },
-
-    "Loveseat Sofa": {
-        "width": 1.8,
-        "depth": 1.0,
-        "clearance": 0.5
-    },
-
-    "L-shaped Sofa": {
-        "width": 2.8,
-        "depth": 2.2,
-        "clearance": 0.7
-    },
-
-    "Coffee Table": {
-        "width": 1.0,
-        "depth": 0.6,
-        "clearance": 0.3
-    },
-
-    "TV Stand": {
-        "width": 1.6,
-        "depth": 0.5,
-        "clearance": 0.3
-    },
-
-    # =====================================================
-    # BEDROOM
-    # =====================================================
-
-    "King-size Bed": {
-        "width": 2.2,
-        "depth": 2.4,
-        "clearance": 0.5
-    },
-
-    "Single bed": {
-        "width": 1.2,
-        "depth": 2.0,
-        "clearance": 0.4
-    },
-
-    "Wardrobe": {
-        "width": 1.8,
-        "depth": 0.7,
-        "clearance": 0.3
-    },
-
-    "Nightstand": {
-        "width": 0.5,
-        "depth": 0.5,
-        "clearance": 0.1
-    },
-
-    # =====================================================
-    # DINING ROOM
-    # =====================================================
-
-    "Dining Table": {
-        "width": 1.8,
-        "depth": 1.8,
-        "clearance": 0.8
-    },
-
-    "Dining Chair": {
-        "width": 0.7,
-        "depth": 0.7,
-        "clearance": 0.2
-    },
-
-    # =====================================================
-    # KITCHEN
-    # =====================================================
-
-    "Refrigerator": {
-        "width": 1.0,
-        "depth": 0.8,
-        "clearance": 0.2
-    },
-
-    "Kitchen Cabinet": {
-        "width": 1.5,
-        "depth": 0.6,
-        "clearance": 0.15
-    },
-
-    "Sink": {
-        "width": 0.8,
-        "depth": 0.6,
-        "clearance": 0.15
-    },
-
-    "Stove": {
-        "width": 0.9,
-        "depth": 0.7,
-        "clearance": 0.2
-    },
-
-    # =====================================================
-    # BATHROOM
-    # =====================================================
-
-    "Toilet": {
-        "width": 0.8,
-        "depth": 1.0,
-        "clearance": 0.1
-    },
-
-    "Bathroom Sink": {
-        "width": 0.7,
-        "depth": 0.5,
-        "clearance": 0.1
-    },
-
-    "Shower": {
-        "width": 1.0,
-        "depth": 1.0,
-        "clearance": 0.15
-    }
+    "King-size Bed":   {"width": 0.32, "depth": 0.42},
+    "Single bed":      {"width": 0.22, "depth": 0.36},
+    "Three-Seat / Multi-seat Sofa": {"width": 0.32, "depth": 0.18},
+    "Loveseat Sofa":   {"width": 0.24, "depth": 0.16},
+    "Dining Table":    {"width": 0.28, "depth": 0.28},
+    "Coffee Table":    {"width": 0.18, "depth": 0.14},
+    "Dining Chair":    {"width": 0.12, "depth": 0.12},
+    "Lounge Chair / Cafe Chair / Office Chair": {"width": 0.14, "depth": 0.14},
+    "Wardrobe":        {"width": 0.18, "depth": 0.12},
+    "TV Stand":        {"width": 0.24, "depth": 0.10},
+    "Floor Lamp":      {"width": 0.08, "depth": 0.08},
+    "Pendant Lamp":    {"width": 0.10, "depth": 0.10},
 }
+
 
 # =========================================================
 # TEMPLATE LAYOUT
@@ -1755,15 +1557,6 @@ def generate_spatial_layout(item, anchors, scene_meta, room_type):
     x_norm = center_x
     z_norm = 0.50
     rotation_y = 0.0
-    depth_map =scene_meta.get(
-        "depth_map"
-    )
-    floor_mask = scene_meta.get(
-        "floor_mask"
-    )
-    usable_regions = scene_meta.get(
-        "usable_regions"
-    )
 
     if placement == "against_wall":
         preferred_wall = rule.get("preferred_wall", "back_wall")
@@ -1868,31 +1661,7 @@ def generate_spatial_layout(item, anchors, scene_meta, room_type):
         dx = safe_float(door.get("x_norm"), 0.5)
         if abs(x_norm - dx) < 0.15:
             z_norm += 0.12
-    # =====================================================
-    # DEPTH-AWARE FLOOR VALIDATION
-    # =====================================================
 
-    local_depth = 0.5
-
-    if depth_map is not None:
-
-        local_depth = (
-        sample_local_depth(
-            depth_map,
-            x_norm,
-            z_norm
-        )
-    )
-
-    # Avoid extremely shallow areas
-    if local_depth < 0.18:
-        z_norm += 0.08
-
-    # Avoid extremely deep invalid voids
-    if local_depth > 0.92:
-        z_norm -= 0.06
-
-    z_norm = clamp01(z_norm)
     return (clamp01(x_norm), clamp01(z_norm), rotation_y)
 
 
@@ -2455,106 +2224,7 @@ def generate_kitchen_bathroom_layout(room_type, width, length, height, style=Non
         z_norm = clamp01(z_norm + random.uniform(-0.025, 0.025))
 
         layout_scale = clamp(safe_float(row.get("layout_scale"), 1.0), 0.5, 1.8)
-        footprint = OBJECT_FOOTPRINTS.get(category, {})
 
-        footprint_width = float(footprint.get("width", 1.0))
-
-        footprint_depth = float(footprint.get("depth", 1.0))
-
-        clearance = float(footprint.get("clearance", 0.3))
-        spatial = SPATIAL_RULES.get(category, {})
-
-        placement_type = spatial.get(
-        "placement_type",
-        "free"
-    )
-
-        preferred_wall = spatial.get(
-        "preferred_wall",
-        ""
-    )
-
-        anchor_target = spatial.get(
-        "anchor_target",
-        ""
-    )
-
-        face_room = spatial.get(
-        "face_room",
-        False
-    )
-
-        face_anchor = spatial.get(
-        "face_anchor",
-        False
-    )
-
-        headboard_wall = spatial.get(
-        "headboard_wall",
-        False
-    )
-        spatial = SPATIAL_RULES.get(category, {})
-
-        placement_type = spatial.get(
-        "placement_type",
-        "free"
-    )
-
-        preferred_wall = spatial.get(
-        "preferred_wall",
-        ""
-    )
-
-        anchor_target = spatial.get(
-        "anchor_target",
-        ""
-    )
-
-        face_room = spatial.get(
-        "face_room",
-        False
-    )
-
-        face_anchor = spatial.get(
-        "face_anchor",
-        False
-    )
-
-        headboard_wall = spatial.get(
-        "headboard_wall",
-        False
-    )
-        spatial = SPATIAL_RULES.get(category, {})
-
-        placement_type = spatial.get(
-        "placement_type",
-        "free"
-    )
-
-        preferred_wall = spatial.get(
-        "preferred_wall",
-        ""
-    )
-
-        anchor_target = spatial.get(
-        "anchor_target",
-        ""
-    )
-
-        face_room = spatial.get(
-        "face_room",
-        False
-    )
-
-        face_anchor = spatial.get(
-        "face_anchor",
-        False
-    )
-
-        headboard_wall = spatial.get(
-        "headboard_wall",
-        False
-    )
         pred = {
             "model_id": str(row["model_id"]).strip(),
             "category": category,
@@ -2574,15 +2244,6 @@ def generate_kitchen_bathroom_layout(room_type, width, length, height, style=Non
             "zone": rule_zone,
             "generation_method": "rule_based_kitchen_bathroom",
             "recommendations": extract_recommendations(row),
-            "footprint_width": footprint_width,
-            "footprint_depth": footprint_depth,
-            "clearance": clearance,
-            "placement_type": placement_type,
-            "preferred_wall": preferred_wall,
-            "anchor_target": anchor_target,
-            "face_room": face_room,
-            "face_anchor": face_anchor,
-            "headboard_wall": headboard_wall,
         }
 
         pred = kb_collision_adjust(pred, predictions)
@@ -2840,45 +2501,6 @@ def predict_full_room_preview(
             "room_length": round(length, 3),
             "room_height": round(height, 3),
             "room_area_sqm": round(width * length, 2),
-            # =====================================================
-# PHASE 7 GEOMETRY EXPORT
-# =====================================================
-
-"detected_windows":
-    scene_meta.get(
-        "windows",
-        []
-    ),
-
-"detected_doors":
-    scene_meta.get(
-        "doors",
-        []
-    ),
-
-"usable_center_x":
-    scene_meta.get(
-        "usable_center_x",
-        0.5
-    ),
-
-"usable_floor_y":
-    scene_meta.get(
-        "usable_floor_y",
-        0.75
-    ),
-
-"estimated_room_depth":
-    scene_meta.get(
-        "estimated_room_depth",
-        5.0
-    ),
-
-"camera_bias":
-    scene_meta.get(
-        "camera_bias",
-        "center"
-    ),
             "budget_summary": budget_summary,
             "furniture": predictions,
         }
@@ -2944,13 +2566,6 @@ def predict_full_room_preview(
             z_norm=z_norm,
             anchors=anchors
         )
-        footprint = OBJECT_FOOTPRINTS.get(category, {})
-
-        footprint_width = float(footprint.get("width", 1.0))
-
-        footprint_depth = float(footprint.get("depth", 1.0))
-
-        clearance = float(footprint.get("clearance", 0.3))
 
         pred = {
             "model_id": str(row["model_id"]).strip(),
@@ -2968,9 +2583,6 @@ def predict_full_room_preview(
             "role": role,
             "zone": zone,
             "recommendations": extract_recommendations(row),
-            "footprint_width": footprint_width,
-            "footprint_depth": footprint_depth,
-            "clearance": clearance,
         }
 
         pred = normalized_collision_adjust(pred, predictions, room_type)
@@ -3006,45 +2618,6 @@ def predict_full_room_preview(
         "room_length": round(length, 3),
         "room_height": round(height, 3),
         "room_area_sqm": round(width * length, 2),
-        # =====================================================
-# PHASE 7 GEOMETRY EXPORT
-# =====================================================
-
-"detected_windows":
-    scene_meta.get(
-        "windows",
-        []
-    ),
-
-"detected_doors":
-    scene_meta.get(
-        "doors",
-        []
-    ),
-
-"usable_center_x":
-    scene_meta.get(
-        "usable_center_x",
-        0.5
-    ),
-
-"usable_floor_y":
-    scene_meta.get(
-        "usable_floor_y",
-        0.75
-    ),
-
-"estimated_room_depth":
-    scene_meta.get(
-        "estimated_room_depth",
-        5.0
-    ),
-
-"camera_bias":
-    scene_meta.get(
-        "camera_bias",
-        "center"
-    ),
         "budget_summary": budget_summary,
         "furniture": predictions,
     }
