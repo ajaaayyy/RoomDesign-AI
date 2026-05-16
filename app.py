@@ -1,3 +1,4 @@
+from curses import meta
 import time
 import os
 import math
@@ -7,6 +8,7 @@ import cv2
 from flask import Flask
 import requests
 import torch
+from transformers import pipeline
 import gdown
 import cv2
 from collections import deque
@@ -23,6 +25,44 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 
 app = Flask(__name__)
+
+# =========================================================
+# ROOM IMAGE VALIDATOR
+# =========================================================
+
+room_classifier = pipeline(
+    "image-classification",
+    model="google/vit-base-patch16-224"
+)
+
+ROOM_KEYWORDS = [
+    "living room",
+    "bedroom",
+    "kitchen",
+    "bathroom",
+    "interior",
+    "room"
+]
+
+def is_valid_room_image(image_path):
+    try:
+        image = Image.open(image_path)
+
+        results = room_classifier(image)
+
+        print("[ROOM VALIDATION]", results)
+
+        for r in results:
+            label = r["label"].lower()
+
+            if any(keyword in label for keyword in ROOM_KEYWORDS):
+                return True
+
+        return False
+
+    except Exception as e:
+        print("[ROOM VALIDATION ERROR]", e)
+        return False
 # =========================================================
 # CONFIG
 # =========================================================
@@ -752,80 +792,42 @@ def estimate_room_geometry(depth_map):
 
 
 # =========================================================
-# MAIN IMAGE UNDERSTANDING
+# ROOM IMAGE VALIDATOR
 # =========================================================
-def analyze_room_image_metadata(image_url: str):
-    meta = get_default_scene_meta()
 
-    if not image_url:
-        print("[IMAGE] no image provided")
-        return meta
+room_classifier = pipeline(
+    "image-classification",
+    model="google/vit-base-patch16-224"
+)
 
+ROOM_KEYWORDS = [
+    "living room",
+    "bedroom",
+    "kitchen",
+    "bathroom",
+    "interior",
+    "room"
+]
+
+def is_valid_room_image(image_path):
     try:
-        local_path = download_image_temp(image_url)
+        image = Image.open(image_path)
 
-        if not local_path:
-            return meta
+        results = room_classifier(image)
 
-        image_bgr = cv2.imread(local_path)
+        print("[ROOM VALIDATION]", results)
 
-        if image_bgr is None:
-            return meta
+        for r in results:
+            label = r["label"].lower()
 
-        h, w = image_bgr.shape[:2]
-        print(f"[IMAGE] loaded image {w}x{h}")
-        MAX_SIZE = 1280
+            if any(keyword in label for keyword in ROOM_KEYWORDS):
+                return True
 
-        if max(h, w) > MAX_SIZE:
-          scale = MAX_SIZE / max(h, w)
-
-        image_bgr = cv2.resize(
-            image_bgr,
-            (int(w * scale), int(h * scale))
-        )
-
-        h, w = image_bgr.shape[:2]
-
-        print(f"[RESIZED] {w}x{h}")
-
-        
-        depth_map = estimate_depth_map(image_bgr)
-
-        import gc
-        gc.collect()
-
-        if depth_map is None:
-            return meta
-
-        floor_meta = detect_floor_region(depth_map)
-        floor_mask = segment_floor_mask(image_bgr, depth_map)
-        usable_regions = extract_usable_regions(floor_mask)
-        usable_meta = compute_room_open_space(usable_regions, image_bgr.shape)
-        geometry_meta = estimate_room_geometry(depth_map)
-        wall_lines = detect_room_walls(image_bgr)
-        windows = detect_probable_windows(image_bgr)
-        doors = detect_probable_doors(image_bgr)
-
-        meta.update(floor_meta)
-        meta.update(geometry_meta)
-        meta.update(usable_meta)
-
-        meta["room_depth_confidence"] = 0.85
-        meta["wall_lines"] = wall_lines
-        meta["windows"] = windows
-        meta["doors"] = doors
-
-        print("[IMAGE] scene analysis complete")
-        print(meta)
-
-        return meta
+        return False
 
     except Exception as e:
-        print(f"[IMAGE] scene analysis failed: {e}")
-        traceback.print_exc()
-        return meta
-
-
+        print("[ROOM VALIDATION ERROR]", e)
+        return False
 # =========================================================
 # ADVANCED ROTATION HELPERS
 # =========================================================
@@ -2458,7 +2460,106 @@ def apply_allocated_budget_to_predictions(predictions, allocated_budget_php=None
         "excluded_item_categories": [safe_str(p.get("category"), "unknown") for p in excluded_items],
     }
 
+# =========================================================
+# MAIN IMAGE UNDERSTANDING
+# =========================================================
+def analyze_room_image_metadata(image_url: str):
+    meta = get_default_scene_meta()
 
+    if not image_url:
+        print("[IMAGE] no image provided")
+        return meta
+
+    try:
+        local_path = download_image_temp(image_url)
+
+        if not local_path:
+            return meta
+
+        # ================================
+        # ROOM VALIDATION
+        # ================================
+        if not is_valid_room_image(local_path):
+            print("[ROOM VALIDATION] Non-room image detected")
+
+            meta["invalid_room_image"] = True
+            return meta
+
+        image_bgr = cv2.imread(local_path)
+
+        if image_bgr is None:
+            return meta
+
+        h, w = image_bgr.shape[:2]
+
+        print(f"[IMAGE] loaded image {w}x{h}")
+
+        MAX_SIZE = 1280
+
+        if max(h, w) > MAX_SIZE:
+            scale = MAX_SIZE / max(h, w)
+
+            image_bgr = cv2.resize(
+                image_bgr,
+                (int(w * scale), int(h * scale))
+            )
+
+            h, w = image_bgr.shape[:2]
+
+            print(f"[RESIZED] {w}x{h}")
+
+        depth_map = estimate_depth_map(image_bgr)
+
+        import gc
+        gc.collect()
+
+        if depth_map is None:
+            return meta
+
+        floor_meta = detect_floor_region(depth_map)
+
+        floor_mask = segment_floor_mask(
+            image_bgr,
+            depth_map
+        )
+
+        usable_regions = extract_usable_regions(
+            floor_mask
+        )
+
+        usable_meta = compute_room_open_space(
+            usable_regions,
+            image_bgr.shape
+        )
+
+        geometry_meta = estimate_room_geometry(
+            depth_map
+        )
+
+        wall_lines = detect_room_walls(image_bgr)
+
+        windows = detect_probable_windows(image_bgr)
+
+        doors = detect_probable_doors(image_bgr)
+
+        meta.update(floor_meta)
+        meta.update(geometry_meta)
+        meta.update(usable_meta)
+
+        meta["room_depth_confidence"] = 0.85
+        meta["wall_lines"] = wall_lines
+        meta["windows"] = windows
+        meta["doors"] = doors
+
+        print("[IMAGE] scene analysis complete")
+        print(meta)
+
+        return meta
+
+    except Exception as e:
+        print(f"[IMAGE] scene analysis failed: {e}")
+        traceback.print_exc()
+        return meta
 # =========================================================
 # MAIN PREDICTION
 # =========================================================
@@ -2484,6 +2585,9 @@ def predict_full_room_preview(
 
     width, length, height = enforce_code_minimums(width, length, height, room_type)
     scene_meta = analyze_room_image_metadata(image_url)
+
+    if scene_meta.get("invalid_room_image"):
+      raise ValueError("Uploaded image is not a valid room.")
 
     # FIX: image-aware correction indentation was broken in original —
     # the soft-correction assignments were outside the if-block, meaning
