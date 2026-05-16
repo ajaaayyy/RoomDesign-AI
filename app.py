@@ -41,7 +41,18 @@ ROOM_KEYWORDS = [
     "kitchen",
     "bathroom",
     "interior",
-    "room"
+    "room",
+    "studio couch",
+    "home theater",
+    "dining table",
+    "restaurant",
+    "hotel room",
+    "lobby",
+    "apartment",
+    "office",
+    "library",
+    "wardrobe",
+    "cabinet"
 ]
 
 def is_valid_room_image(image_path):
@@ -58,7 +69,14 @@ def is_valid_room_image(image_path):
             if any(keyword in label for keyword in ROOM_KEYWORDS):
                 return True
 
-        return False
+        top_score = results[0]["score"]
+
+        # reject only if VERY confident non-room image
+        if top_score > 0.90:
+            return False
+
+        # otherwise allow image
+        return True
 
     except Exception as e:
         print("[ROOM VALIDATION ERROR]", e)
