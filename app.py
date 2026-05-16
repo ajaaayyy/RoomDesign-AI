@@ -35,159 +35,6 @@ room_classifier = pipeline(
     model="google/vit-base-patch16-224"
 )
 
-ROOM_KEYWORDS = [
-    # MAIN ROOM TYPES
-    "living room",
-    "bedroom",
-    "kitchen",
-    "bathroom",
-    "dining room",
-    "guest room",
-    "hotel room",
-    "apartment",
-    "studio apartment",
-    "office",
-    "conference room",
-    "meeting room",
-    "classroom",
-    "library",
-    "lobby",
-    "hallway",
-    "corridor",
-    "attic",
-    "basement",
-    "closet",
-    "walk-in closet",
-    "laundry room",
-    "pantry",
-    "garage",
-    "home theater",
-    "game room",
-    "music room",
-    "gym",
-    "spa",
-    "sauna",
-
-    # GENERAL INTERIOR WORDS
-    "interior",
-    "room",
-    "indoors",
-    "indoor",
-    "house",
-    "home",
-    "building",
-    "architecture",
-
-    # WALL / FLOOR / CEILING
-    "wall",
-    "floor",
-    "ceiling",
-    "tile roof",
-    "window shade",
-    "window screen",
-    "window",
-    "door",
-    "curtain",
-    "blinds",
-    "fireplace",
-    "stairs",
-    "railing",
-
-    # LIVING ROOM FURNITURE
-    "sofa",
-    "couch",
-    "sectional",
-    "loveseat",
-    "armchair",
-    "recliner",
-    "coffee table",
-    "tv stand",
-    "television",
-    "bookshelf",
-    "bookcase",
-    "side table",
-    "console table",
-    "ottoman",
-
-    # BEDROOM FURNITURE
-    "bed",
-    "bunk bed",
-    "crib",
-    "mattress",
-    "wardrobe",
-    "dresser",
-    "nightstand",
-    "vanity",
-    "mirror",
-
-    # DINING
-    "dining table",
-    "dining chair",
-    "bar stool",
-    "barstool",
-
-    # OFFICE
-    "desk",
-    "office chair",
-    "computer desk",
-    "monitor",
-
-    # KITCHEN
-    "refrigerator",
-    "fridge",
-    "microwave",
-    "oven",
-    "stove",
-    "cooktop",
-    "dishwasher",
-    "kitchen island",
-    "sink",
-    "cabinet",
-    "countertop",
-
-    # BATHROOM
-    "bathtub",
-    "toilet",
-    "shower",
-    "washbasin",
-    "faucet",
-    "mirror",
-
-    # LIGHTING
-    "lamp",
-    "floor lamp",
-    "table lamp",
-    "wall lamp",
-    "ceiling lamp",
-    "pendant lamp",
-    "chandelier",
-    "lighting",
-
-    # DECOR
-    "plant",
-    "rug",
-    "carpet",
-    "painting",
-    "picture frame",
-    "vase",
-    "clock",
-
-    # ARCHITECTURAL SPACES
-    "atrium",
-    "courtyard",
-    "balcony",
-    "terrace",
-
-    # COMMON FALSE-POSITIVE INTERIOR LABELS
-    "vault",
-    "monastery",
-    "church",
-    "restaurant",
-    "cafe",
-    "shop",
-    "store",
-]
-
 def is_valid_room_image(image_path):
     try:
         image = Image.open(image_path)
@@ -196,25 +43,60 @@ def is_valid_room_image(image_path):
 
         print("[ROOM VALIDATION]", results)
 
-        for r in results:
+        NON_ROOM_KEYWORDS = [
+            "dog",
+            "cat",
+            "bird",
+            "person",
+            "man",
+            "woman",
+            "face",
+            "selfie",
+            "food",
+            "pizza",
+            "burger",
+            "car",
+            "vehicle",
+            "truck",
+            "bus",
+            "motorcycle",
+            "bicycle",
+            "paper",
+            "document",
+            "book",
+            "notebook",
+            "pen",
+            "phone",
+            "laptop",
+            "computer",
+            "tv",
+            "television",
+            "shoe",
+            "shirt",
+            "dress",
+            "tree",
+            "flower",
+            "animal",
+        ]
+
+        for r in results[:5]:
             label = r["label"].lower()
+            score = r["score"]
 
-            if any(keyword in label for keyword in ROOM_KEYWORDS):
-                return True
+            print(f"[CHECK] {label} = {score:.3f}")
 
-        top_score = results[0]["score"]
+            if any(keyword in label for keyword in NON_ROOM_KEYWORDS):
+                if score > 0.70:
+                    print("[ROOM VALIDATION] obvious non-room image")
+                    return False
 
-        # reject only if VERY confident non-room image
-        if top_score > 0.90:
-            return False
-
-        # otherwise allow image
         return True
 
     except Exception as e:
         print("[ROOM VALIDATION ERROR]", e)
-        return False
-# =========================================================
+
+        return True
+# ========================================================
 # CONFIG
 # =========================================================
 BASE_PATH = os.getcwd()
@@ -941,43 +823,6 @@ def estimate_room_geometry(depth_map):
     }
 
 
-# =========================================================
-# ROOM IMAGE VALIDATOR
-# =========================================================
-
-room_classifier = pipeline(
-    "image-classification",
-    model="google/vit-base-patch16-224"
-)
-
-ROOM_KEYWORDS = [
-    "living room",
-    "bedroom",
-    "kitchen",
-    "bathroom",
-    "interior",
-    "room"
-]
-
-def is_valid_room_image(image_path):
-    try:
-        image = Image.open(image_path)
-
-        results = room_classifier(image)
-
-        print("[ROOM VALIDATION]", results)
-
-        for r in results:
-            label = r["label"].lower()
-
-            if any(keyword in label for keyword in ROOM_KEYWORDS):
-                return True
-
-        return False
-
-    except Exception as e:
-        print("[ROOM VALIDATION ERROR]", e)
-        return False
 # =========================================================
 # ADVANCED ROTATION HELPERS
 # =========================================================
